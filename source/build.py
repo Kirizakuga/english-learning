@@ -84,6 +84,22 @@ def parse_bank(path):
     return topics
 
 
+def parse_cues(path):
+    """cues.txt: 'frame-id | cue' per line; # starts a comment."""
+    cues = {}
+    for ln, raw in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+        line = raw.strip()
+        if not line or line.startswith("#"):
+            continue
+        fid, sep, cue = (p.strip() for p in line.partition("|"))
+        if not sep or not cue:
+            sys.exit(f"{path.name}:{ln}: expected 'frame-id | cue': {line}")
+        if fid in cues:
+            sys.exit(f"{path.name}:{ln}: duplicate cue for {fid}")
+        cues[fid] = cue
+    return cues
+
+
 def fill(sentence, x):
     if sentence.strip() == "___":
         return x
@@ -157,6 +173,7 @@ def make_items(topic, fi, fr, variant, name, rng):
 
 def main():
     rng = random.Random(2026)
+    cues = parse_cues(HERE / "cues.txt")
     topics = []
     for name in ("bank_a.txt", "bank_b.txt", "bank_c.txt"):
         topics += parse_bank(HERE / name)
@@ -178,7 +195,16 @@ def main():
                     assert "{P}" not in it["prompt"], it
                     if it["options"]:
                         assert len(set(it["options"])) == len(it["options"]), (fr["ln"], it)
+                    if it["kind"] == "type":
+                        if it["frame"] not in cues:
+                            sys.exit(f"cues.txt: no cue for typed frame {it['frame']} ({fr['ln']})")
+                        it["cue"] = cues[it["frame"]]
                     questions.append(it)
+
+    typed = {q["frame"] for q in questions if q["kind"] == "type"}
+    unused = sorted(set(cues) - typed)
+    if unused:
+        sys.exit(f"cues.txt: cues for frames without a typed question: {', '.join(unused)}")
 
     out_topics = []
     for t in topics:

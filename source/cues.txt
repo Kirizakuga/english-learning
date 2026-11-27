@@ -1,0 +1,560 @@
+# Cues for typed questions, shown in brackets after the gap (THPT style):
+#   Minh usually ___ to university by bus. (go)
+# One line per frame: frame-id | cue
+# - verbs: base form, plus the subject or "not" when they are part of the answer
+# - word forms: the root word; plurals: the singular
+# - closed sets (articles, prepositions, connectors, modals): a short list to choose from
+# build.py adds the cue to the frame's typed question(s) and checks every typed frame has one.
+
+ps-pc-01 | go
+ps-pc-02 | play
+ps-pc-03 | boil
+ps-pc-04 | study
+ps-pc-05 | not / like
+ps-pc-06 | leave
+ps-pc-07 | you / wear
+ps-pc-08 | understand
+ps-pc-09 | live
+ps-pc-10 | take
+ps-pc-11 | taste
+ps-pc-12 | you / go
+ps-pc-13 | grow
+
+past-01 | cook
+past-02 | move
+past-03 | watch
+past-04 | lose
+past-05 | study
+past-06 | open
+past-07 | you / do
+past-08 | write
+past-09 | send
+past-10 | enjoy
+past-11 | do
+past-12 | break
+past-13 | have
+
+pp-01 | be
+pp-02 | live
+pp-03 | finish
+pp-04 | eat
+pp-05 | not / finish
+pp-06 | do
+pp-07 | be
+pp-08 | see
+pp-09 | send
+pp-10 | ever / have
+pp-11 | have
+pp-12 | write
+pp-13 | have
+
+future-01 | be going to
+future-02 | will / be going to
+future-03 | see
+future-04 | buy
+future-05 | start
+future-06 | replace
+future-07 | not / will
+future-08 | stay
+future-09 | will / be
+future-10 | be
+future-11 | be going to
+future-12 | get
+
+sva-01 | be
+sva-02 | have
+sva-03 | live
+sva-04 | look
+sva-05 | be
+sva-06 | be
+sva-07 | be
+sva-08 | choose
+sva-09 | work
+sva-10 | be
+sva-11 | be
+sva-12 | be
+sva-13 | listen
+
+qform-01 | I / do
+qform-02 | it / be
+qform-03 | be
+qform-04 | do
+qform-05 | have
+qform-06 | do
+qform-07 | do
+qform-08 | write
+qform-09 | the station / be
+qform-10 | do
+qform-11 | do
+qform-12 | be
+qform-13 | do
+
+neg-01 | not / do
+neg-02 | not / do
+neg-03 | not / have
+neg-04 | not / be
+neg-05 | not / do
+neg-06 | not / be
+neg-07 | no / not / any
+neg-08 | not / must
+neg-09 | not / have
+neg-10 | not / do
+neg-11 | anywhere / somewhere / nowhere
+neg-12 | ever / never
+
+art-01 | a / an / the
+art-02 | a / an / the
+art-03 | a / an / the
+art-04 | a / an / the
+art-06 | a / an / the
+art-07 | a / an / the
+art-09 | a / an / the
+art-10 | a / an / the
+art-11 | a / an / the
+art-12 | a / an / the
+
+count-01 | information
+count-02 | much / many
+count-03 | a lot of / much
+count-04 | idea
+count-05 | advice
+count-06 | little / few
+count-07 | few / little
+count-08 | many / much
+count-09 | a lot of / many
+count-10 | fewer / less
+count-11 | some / a
+count-12 | furniture
+
+plural-01 | vertex
+plural-02 | person
+plural-03 | child
+plural-04 | knife
+plural-05 | criterion
+plural-06 | analysis
+plural-07 | tomato
+plural-08 | woman
+plural-09 | foot
+plural-10 | church
+plural-11 | shelf
+plural-12 | sheep
+plural-13 | phenomenon
+
+pron-01 | it
+pron-02 | it / be
+pron-03 | who
+pron-04 | I
+pron-05 | I
+pron-06 | they
+pron-07 | we
+pron-08 | you
+pron-09 | you / be
+pron-10 | I
+pron-11 | they
+pron-12 | she
+
+prep-tp-01 | in / on / at
+prep-tp-02 | in / on / at
+prep-tp-03 | in / on / at
+prep-tp-04 | in / on / at
+prep-tp-05 | in / on / at
+prep-tp-06 | for / since
+prep-tp-07 | for / since
+prep-tp-08 | in / on / at
+prep-tp-09 | in / on / at
+prep-tp-10 | in / on / at
+prep-tp-11 | in / at / to
+prep-tp-12 | in / on / at
+
+comp-01 | fast
+comp-02 | interesting
+comp-03 | hot
+comp-04 | good
+comp-05 | easy
+comp-06 | good
+comp-07 | little
+comp-08 | as / than
+comp-09 | much
+comp-10 | a / the
+comp-11 | high
+comp-12 | short
+
+modal-01 | must / might
+modal-02 | should
+modal-03 | can
+modal-04 | can
+modal-05 | not / have
+modal-06 | must / may
+modal-07 | could
+modal-08 | not / can
+modal-09 | can
+modal-10 | may / must
+modal-11 | need
+modal-12 | have
+
+ger-inf-01 | remove
+ger-inf-02 | open
+ger-inf-03 | add
+ger-inf-04 | study
+ger-inf-05 | read
+ger-inf-06 | see
+ger-inf-07 | call
+ger-inf-08 | close
+ger-inf-09 | make
+ger-inf-10 | talk
+ger-inf-11 | pay
+ger-inf-12 | learn
+ger-inf-13 | animate
+
+ppc-01 | learn
+ppc-02 | work
+ppc-03 | you / be
+ppc-04 | rain
+ppc-05 | work
+ppc-06 | you / be
+ppc-07 | wait
+ppc-08 | read
+ppc-09 | know
+ppc-10 | try
+ppc-11 | rise
+ppc-12 | have
+
+pastperf-01 | already / leave
+pastperf-02 | see
+pastperf-03 | finish
+pastperf-04 | leave
+pastperf-05 | live
+pastperf-06 | be
+pastperf-07 | start
+pastperf-08 | not / meet
+pastperf-09 | beg
+pastperf-10 | travel
+pastperf-11 | sell
+pastperf-12 | never / speak
+
+cond1-01 | melt
+cond1-02 | stay
+cond1-03 | be
+cond1-04 | add
+cond1-05 | hurry
+cond1-06 | study
+cond1-07 | will / would
+cond1-08 | press
+cond1-09 | tell
+cond1-10 | be
+cond1-11 | catch
+cond1-12 | be
+
+cond3-01 | pass
+cond3-02 | leave
+cond3-03 | be
+cond3-04 | not / get
+cond3-05 | help
+cond3-06 | hear
+cond3-07 | be
+cond3-08 | win
+cond3-09 | have
+cond3-10 | will / have
+cond3-11 | play
+cond3-12 | not / have
+
+passive-01 | publish
+passive-02 | build
+passive-03 | not / fix
+passive-04 | lock
+passive-05 | announce
+passive-06 | speak
+passive-07 | clean
+passive-08 | steal
+passive-09 | host
+passive-10 | check
+passive-11 | release
+passive-12 | write
+
+rel-01 | who / which / whose
+rel-02 | who / which / where
+rel-03 | that / which / who
+rel-04 | where / which / who
+rel-05 | who / whose / which
+rel-06 | that / who / whom
+rel-07 | why / which / where
+rel-08 | who / whom / that
+rel-09 | that / what / which
+rel-10 | when / where / which
+rel-11 | who / which / whose
+rel-12 | that / what / which
+
+report-01 | be
+report-02 | see
+report-03 | I / live
+report-04 | will
+report-05 | not / to
+report-06 | can
+report-07 | be
+report-08 | whether / that
+report-09 | close
+report-10 | say / tell
+report-11 | say / tell
+report-12 | be
+
+deduce-01 | must / can't / might
+deduce-02 | must / can't / might
+deduce-03 | must / can't / might
+deduce-04 | must / can't / might
+deduce-05 | must / can't / might
+deduce-06 | must / can't / might
+deduce-07 | must / can't / might
+deduce-08 | may / must / can't
+deduce-09 | must / can't / might
+deduce-10 | must / can't / might
+deduce-11 | must / can't / might
+deduce-12 | must / can't / might
+
+adjadv-01 | fluent
+adjadv-02 | careful
+adjadv-03 | like
+adjadv-04 | black / long
+adjadv-05 | old / wooden / beautiful
+adjadv-06 | extreme
+adjadv-07 | good
+adjadv-08 | angry
+adjadv-09 | interesting / real
+adjadv-10 | excite
+adjadv-11 | bore
+adjadv-12 | Persian / small / lovely
+
+link-01 | although / despite
+link-02 | although / despite
+link-03 | however / although
+link-04 | because / because of
+link-05 | in spite of / although
+link-06 | whereas / moreover
+link-07 | nevertheless / although
+link-08 | due to / because
+link-09 | otherwise / therefore
+link-10 | moreover / however
+link-11 | therefore / however
+link-12 | even though / in spite of
+
+depprep-01 | in / on / at
+depprep-02 | in / on / of
+depprep-03 | in / on / at
+depprep-04 | in / on / at
+depprep-05 | of / from / with
+depprep-06 | for / of / to
+depprep-07 | with / for / on
+depprep-08 | for / of / with
+depprep-09 | to / with / by
+depprep-10 | to / with / as
+depprep-11 | of / from / with
+depprep-12 | to / with / for
+depprep-13 | to / on / at
+
+usedto-01 | use
+usedto-02 | be / use
+usedto-03 | get / use
+usedto-04 | use
+usedto-05 | use
+usedto-06 | use
+usedto-07 | get / use
+usedto-08 | use
+usedto-09 | be / use
+usedto-10 | use
+usedto-11 | get / use
+usedto-12 | use
+
+sosuch-01 | so / such
+sosuch-02 | so / such
+sosuch-03 | too / enough
+sosuch-04 | too / enough
+sosuch-05 | too / enough
+sosuch-06 | so / such
+sosuch-07 | too / enough
+sosuch-08 | so / such
+sosuch-09 | too / enough
+sosuch-10 | too / enough
+sosuch-11 | so / such
+sosuch-12 | so / such
+
+futperf-01 | finish
+futperf-02 | lie
+futperf-03 | eat
+futperf-04 | have
+futperf-05 | work
+futperf-06 | produce
+futperf-07 | drive
+futperf-08 | will / be
+futperf-09 | study
+futperf-10 | wait
+futperf-11 | check
+futperf-12 | work
+
+partic-01 | read
+partic-02 | publish
+partic-03 | walk
+partic-04 | sit
+partic-05 | shock
+partic-06 | collect
+partic-07 | have
+partic-08 | not / know
+partic-09 | do
+partic-10 | wish
+partic-11 | see
+partic-12 | grow up
+
+wish-01 | have
+wish-02 | go
+wish-03 | stop
+wish-04 | can
+wish-05 | stay
+wish-06 | tell
+wish-07 | stop
+wish-08 | not / make
+wish-09 | study
+wish-10 | talk
+wish-11 | live
+wish-12 | go
+
+causative-01 | cut
+causative-02 | repair
+causative-03 | fix
+causative-04 | fix
+causative-05 | steal
+causative-06 | check
+causative-07 | paint
+causative-08 | service
+causative-09 | help
+causative-10 | install
+causative-11 | test
+causative-12 | send
+
+emph-01 | do
+emph-02 | do
+emph-03 | do
+emph-04 | be
+emph-05 | do
+emph-06 | shall / will
+emph-07 | be
+emph-08 | do
+emph-09 | can
+emph-10 | do
+emph-11 | do
+emph-12 | will
+
+ellipsis-01 | to / it
+ellipsis-02 | not / so
+ellipsis-03 | not / so
+ellipsis-04 | one / it
+ellipsis-05 | one
+ellipsis-06 | do
+ellipsis-07 | do
+ellipsis-08 | not / so
+ellipsis-09 | one / it
+ellipsis-10 | can
+ellipsis-11 | do
+ellipsis-12 | not / so
+
+parallel-01 | code
+parallel-02 | fun
+parallel-03 | launch
+parallel-04 | meet
+parallel-05 | creative
+parallel-06 | by / on / in
+parallel-07 | fast
+parallel-08 | work
+parallel-09 | fool
+parallel-10 | drive
+parallel-11 | confident
+parallel-12 | ask
+
+advpass-01 | say
+advpass-02 | believe
+advpass-03 | live
+advpass-04 | expect
+advpass-05 | leave
+advpass-06 | expect
+advpass-07 | argue
+advpass-08 | report
+advpass-09 | consider
+advpass-10 | wide
+advpass-11 | speak
+advpass-12 | predict
+
+inversion-01 | I / see
+inversion-02 | it / be
+inversion-03 | he / be
+inversion-04 | we / have
+inversion-05 | I / realise
+inversion-06 | you / should
+inversion-07 | Jonathan / know
+inversion-08 | I / get
+inversion-09 | we / see
+inversion-10 | call
+inversion-11 | buy
+inversion-12 | she / discover
+
+cleft-01 | what / that / which
+cleft-02 | who / which / what
+cleft-03 | that / what / where
+cleft-04 | be
+cleft-05 | it / what / there
+cleft-06 | why / what / because
+cleft-07 | be
+cleft-08 | be
+cleft-09 | that / what / who
+cleft-10 | what / that / it
+cleft-11 | that / then / when
+cleft-12 | that / what / where
+
+subj-01 | arrive
+subj-02 | drink
+subj-03 | take
+subj-04 | be
+subj-05 | leave
+subj-06 | follow
+subj-07 | be
+subj-08 | not / do
+subj-09 | go
+subj-10 | be
+subj-11 | be
+subj-12 | bring
+
+nominal-01 | introduce
+nominal-02 | increase
+nominal-03 | analyse
+nominal-04 | decide
+nominal-05 | decline
+nominal-06 | construct
+nominal-07 | concern
+nominal-08 | important
+nominal-09 | reduce
+nominal-10 | different
+nominal-11 | understand
+nominal-12 | expand
+
+hedge-01 | appear
+hedge-02 | may / must
+hedge-03 | suggest
+hedge-04 | likely / certain
+hedge-05 | some / many
+hedge-06 | tend
+hedge-07 | argue
+hedge-08 | extend
+hedge-09 | could / must
+hedge-10 | seem
+hedge-11 | wide
+hedge-12 | likely / certain
+
+quant-01 | have
+quant-02 | have
+quant-03 | data
+quant-04 | a / the
+quant-05 | be
+quant-06 | be
+quant-07 | be
+quant-08 | live
+quant-09 | come
+quant-10 | be
+quant-11 | information
+quant-12 | be
+quant-13 | money

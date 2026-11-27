@@ -31,6 +31,7 @@ source/
   bank_a.txt       Band 5–6 topics (hand-written source sentences)
   bank_b.txt       Band 6.5–7 topics
   bank_c.txt       Band 7.5–9 topics
+  cues.txt         bracket cues for typed questions, THPT style: "___ (go)"
   build.py         regenerates data/ from the bank files (run `python3 build.py` inside source/; it rewrites data/)
 HANDOVER.md        this file
 ```
@@ -86,7 +87,7 @@ HANDOVER.md        this file
 | `correct` | 539 | "Which sentence is correct?" from 4 full sentences | option index |
 | `judge` | 2,199 | Decide whether the sentence is Correct or Incorrect | 0 = Correct, 1 = Incorrect |
 | `fix` | 1,591 | The part in `[[…]]` is wrong: pick the replacement | option index |
-| `type` | 525 | Type the missing word(s) for `___` | the expected string |
+| `type` | 525 | Write the correct form for `___`, using the `cue` shown in brackets | the expected string |
 
 Notes:
 - `[[…]]` in a `fix` prompt marks the wrong part. Render it highlighted and strip the brackets.
@@ -176,6 +177,7 @@ sentence with ___ | answer | distractor ;; distractor ;; distractor | explanatio
 - A sentence that is just `___` means the options are whole sentences.
 - A distractor prefixed with `~` is wrong only next to the best answer, so it's never used in `judge`/`fix` on its own. Example: "She is *the* honest person" is fine English in some contexts.
 - `[[…]]` in the wrong/right fields marks the highlighted part.
+- Every sentence that produces a typed question needs a cue in `source/cues.txt` (`frame-id | cue`), shown in brackets after the gap: the base verb, plus the subject or "not" when they are part of the answer (`the station / be`); the root word for word forms; the singular for plurals; a short list for closed sets (`a / an / the`). `build.py` stops if a typed frame has no cue, or a cue has no typed frame.
 - Run `python3 build.py`. It validates the data: 3 distractors per line, no duplicate options, the answer not among the distractors, unique ids.
 
 ---

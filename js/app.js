@@ -8,7 +8,7 @@
   var ROLES = { s: 'subject', aux: 'helper', v: 'verb', o: 'object / word', x: 'time / extra', c: 'connector' };
   var KIND_LABEL = {
     choose: 'Fill the gap', correct: 'Pick the correct sentence', judge: 'Correct or incorrect?',
-    fix: 'Fix the highlighted part', type: 'Type the missing word'
+    fix: 'Fix the highlighted part', type: 'Write the correct form'
   };
   var REDUCED = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -410,11 +410,13 @@
     var p = esc(q.prompt);
     if (q.kind === 'fix') return p.replace(/\[\[(.+?)\]\]/, '<mark>$1</mark>');
     if (q.kind === 'choose' || q.kind === 'type') {
+      // Typed questions carry a THPT-style cue right after the gap: ___ (go)
+      var cue = q.kind === 'type' && q.cue ? ' <span class="cue">(' + esc(q.cue) + ')</span>' : '';
       if (filled !== undefined) {
         var f = /^∅/.test(filled) ? '∅' : esc(filled);
-        return p.replace('___', '<span class="gap filled">' + f + '</span>');
+        return p.replace('___', '<span class="gap filled">' + f + '</span>' + cue);
       }
-      return p.replace('___', '<span class="gap" aria-label="gap">&nbsp;</span>');
+      return p.replace('___', '<span class="gap" aria-label="gap">&nbsp;</span>' + cue);
     }
     return p;
   }
@@ -432,12 +434,6 @@
       promptHtml(q, done && !wholeSentence && (q.kind === 'choose' || q.kind === 'type') ? correctAns : undefined) + '</p>';
 
     if (q.kind === 'type') {
-      if (!done) {
-        html += '<div class="wordbox"><span id="wordbox-label">Build your answer from these words. You won’t need all of them.</span><div class="words" role="group" aria-labelledby="wordbox-label">' +
-          E.typeHint(q, bank).map(function (w) {
-            return '<button type="button" class="word" data-word="' + esc(w) + '">' + esc(w) + '</button>';
-          }).join('') + '</div></div>';
-      }
       html += '<form class="typed" data-form="type" autocomplete="off"><label for="typed-input" class="sr-only">Your answer</label>' +
         '<input id="typed-input" type="text" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="done"' +
         (done ? ' disabled value="' + esc(res.response) + '" class="' + (res.correct ? 'is-right' : 'is-wrong') + '"' : '') + '>' +
@@ -486,15 +482,6 @@
     }
     if (explain) html += '<p class="explain">' + esc(explain) + '</p>';
     return html;
-  }
-
-  // Tapping a word in the word box adds it to the typed answer.
-  function addWord(w) {
-    var input = document.getElementById('typed-input');
-    if (!input || input.disabled) return;
-    var v = input.value.replace(/\s+$/, '');
-    input.value = (v ? v + ' ' : '') + w + ' ';
-    input.focus();
   }
 
   function submitAnswer(response) {
@@ -582,9 +569,8 @@
 
   /* ---------- events ---------- */
   app.addEventListener('click', function (e) {
-    var el = e.target.closest('[data-act], [data-opt], [data-word]');
+    var el = e.target.closest('[data-act], [data-opt]');
     if (!el) return;
-    if (el.hasAttribute('data-word')) { addWord(el.getAttribute('data-word')); return; }
     if (el.hasAttribute('data-opt')) { submitAnswer(Number(el.getAttribute('data-opt'))); return; }
     var act = el.getAttribute('data-act');
     if (act === 'theme') toggleTheme();

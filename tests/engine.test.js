@@ -214,12 +214,9 @@ test('sync document round-trips and stays small', () => {
   assert.deepStrictEqual(back.topics, state.topics);
 });
 
-test('every typed question has a word box that contains the answer', () => {
-  questions.filter(q => q.kind === 'type').forEach(q => {
-    const words = E.typeHint(q, bank);
-    assert(words.length >= 2, q.id + ': word box too small (' + words.join(' ') + ')');
-    q.answer.split(/\s+/).forEach(w => assert(words.includes(w), q.id + ': missing "' + w + '"'));
-  });
+test('every typed question has a cue in brackets', () => {
+  // Some cues equal the answer by design: the base form is the right form ("I'd rather ___ (stay)").
+  questions.filter(q => q.kind === 'type').forEach(q => assert(q.cue && q.cue.trim(), q.id + ': no cue'));
 });
 
 console.log(`\n${passed} passed`);
