@@ -110,7 +110,7 @@
   /* ---------- shared pieces ---------- */
   function brand() {
     return '<a class="brand" href="#map" aria-label="Grammar to Band 9, topic map">' +
-      '<span class="chip r-s">Grammar</span><span class="chip r-c">to</span><span class="chip r-o">Band 9</span></a>';
+      '<span class="brand-dots" aria-hidden="true"><i></i><i></i><i></i></span>Grammar to Band 9</a>';
   }
 
   function masthead() {
@@ -232,7 +232,7 @@
     function x(v) { return L + (v + 1) / 2 * (R - L); }
     var spans = items.filter(function (i) { return i.kind === 'span'; });
     var points = items.filter(function (i) { return i.kind === 'point'; });
-    var fills = ['var(--role-v)', 'var(--role-s)', 'var(--role-o)', 'var(--role-x)'];
+    var fills = [['var(--v-bg)', 'var(--v-ink)'], ['var(--s-bg)', 'var(--s-ink)'], ['var(--o-bg)', 'var(--o-ink)'], ['var(--x-bg)', 'var(--x-ink)']];
     var top = 16, rowH = 42;
     var axisY = top + spans.length * rowH + 22;
     var H = axisY + 78;
@@ -241,22 +241,22 @@
     var sorted = points.slice().sort(function (a, b) { return a.at - b.at; });
     sorted.forEach(function (p) {
       var px = x(p.at), isNow = p.at === 0 && /now/i.test(p.label);
-      s += '<line x1="' + px + '" y1="' + (top - 6) + '" x2="' + px + '" y2="' + axisY + '" stroke="currentColor" stroke-width="2" stroke-dasharray="' + (isNow ? '0' : '4 4') + '" opacity="' + (isNow ? '1' : '.55') + '"/>';
+      s += '<line x1="' + px + '" y1="' + (top - 6) + '" x2="' + px + '" y2="' + axisY + '" stroke="currentColor" stroke-width="1" stroke-dasharray="' + (isNow ? '0' : '3 4') + '" opacity="' + (isNow ? '.6' : '.35') + '"/>';
     });
     spans.forEach(function (sp, i) {
       var x1 = x(Math.min(sp.from, sp.to)), x2 = x(Math.max(sp.from, sp.to)), y = top + i * rowH;
-      s += '<rect x="' + x1 + '" y="' + y + '" width="' + Math.max(10, x2 - x1) + '" height="30" rx="4" fill="' + fills[i % fills.length] + '" stroke="currentColor" stroke-width="3"/>';
-      s += '<text x="' + ((x1 + x2) / 2) + '" y="' + (y + 20) + '" text-anchor="middle" font-size="16" fill="#000">' + esc(sp.label) + '</text>';
+      s += '<rect x="' + x1 + '" y="' + y + '" width="' + Math.max(10, x2 - x1) + '" height="30" rx="6" fill="' + fills[i % fills.length][0] + '"/>';
+      s += '<text x="' + ((x1 + x2) / 2) + '" y="' + (y + 20) + '" text-anchor="middle" font-size="15" fill="' + fills[i % fills.length][1] + '">' + esc(sp.label) + '</text>';
     });
-    s += '<line x1="' + L + '" y1="' + axisY + '" x2="' + R + '" y2="' + axisY + '" stroke="currentColor" stroke-width="4"/>';
-    s += '<path d="M' + (R + 14) + ' ' + axisY + ' L' + R + ' ' + (axisY - 8) + ' L' + R + ' ' + (axisY + 8) + 'Z" fill="currentColor"/>';
+    s += '<line x1="' + L + '" y1="' + axisY + '" x2="' + R + '" y2="' + axisY + '" stroke="currentColor" stroke-width="1.5" opacity=".5"/>';
+    s += '<path d="M' + (R + 10) + ' ' + axisY + ' L' + R + ' ' + (axisY - 5) + ' L' + R + ' ' + (axisY + 5) + 'Z" fill="currentColor" opacity=".5"/>';
     s += '<text class="end" x="' + L + '" y="' + (axisY + 70) + '" font-size="14" fill="currentColor" opacity=".7">past</text>';
     s += '<text class="end" x="' + (R + 10) + '" y="' + (axisY + 70) + '" font-size="14" text-anchor="end" fill="currentColor" opacity=".7">future</text>';
     sorted.forEach(function (p, i) {
       var px = x(p.at), isNow = p.at === 0 && /now/i.test(p.label);
       var close = i > 0 && px - x(sorted[i - 1].at) < (narrow ? 70 : 90);
       var ly = axisY + 32 + (close && i % 2 ? 20 : 0);
-      s += '<rect x="' + (px - 8) + '" y="' + (axisY - 8) + '" width="16" height="16" transform="rotate(45 ' + px + ' ' + axisY + ')" fill="' + (isNow ? 'var(--mark)' : 'var(--card)') + '" stroke="currentColor" stroke-width="3"/>';
+      s += '<circle cx="' + px + '" cy="' + axisY + '" r="6" fill="' + (isNow ? 'var(--accent)' : 'var(--bg)') + '" stroke="' + (isNow ? 'var(--accent)' : 'currentColor') + '" stroke-width="2"/>';
       s += '<text x="' + px + '" y="' + ly + '" text-anchor="middle" font-size="16" fill="currentColor">' + esc(p.label) + '</text>';
     });
     return s + '</svg>';
@@ -300,10 +300,10 @@
     parts.forEach(function (p, i) {
       var dx = mid[i].left - first[i].left, dy = mid[i].top - first[i].top;
       p.animate([
-        { transform: 'translate(' + dx + 'px,' + dy + 'px) rotate(' + (i % 2 ? 5 : -5) + 'deg)' },
-        { transform: 'translate(' + dx + 'px,' + dy + 'px) rotate(' + (i % 2 ? 5 : -5) + 'deg)', offset: 0.35 },
-        { transform: 'none' }
-      ], { duration: 900, easing: 'cubic-bezier(.3,1.4,.5,1)', delay: 80 * i });
+        { transform: 'translate(' + dx + 'px,' + dy + 'px)', opacity: 0.4 },
+        { transform: 'translate(' + dx + 'px,' + dy + 'px)', opacity: 0.4, offset: 0.3 },
+        { transform: 'none', opacity: 1 }
+      ], { duration: 800, easing: 'cubic-bezier(.2,.7,.2,1)', delay: 40 * i });
     });
   }
 
@@ -490,7 +490,7 @@
     o.setAttribute('aria-label', 'Topic mastered');
     o.innerHTML = '<div class="stamp"><span class="big">Mastered</span><p><strong>' + esc(t.title) + '</strong><br>' +
       'You know this one now. It stays in your mixed rounds so it stays fresh.</p>' +
-      '<button class="btn" data-act="close-overlay" id="overlay-btn">Keep going</button></div>';
+      '<button class="btn btn-mark" data-act="close-overlay" id="overlay-btn">Keep going</button></div>';
     document.body.appendChild(o);
     document.getElementById('overlay-btn').focus();
     announce(t.title + ' is now mastered.');
