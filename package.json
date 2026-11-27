@@ -1,0 +1,9 @@
+{
+  "name": "grammar-band9",
+  "private": true,
+  "description": "Visual grammar lessons and practice for IELTS Band 9. Static site: serve this folder and open index.html.",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "test": "node tests/engine.test.js"
+  }
+}

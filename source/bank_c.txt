@@ -1,0 +1,196 @@
+@futperf|3|Future perfect and future continuous|Tương lai hoàn thành và tương lai tiếp diễn|will have + participle = finished before a future time. will be + -ing = in progress at a future time. will have been + -ing = duration up to a future time.|aux:will have|v:past participle|x:by 2030||aux:will be|v:verb-ing|x:this time tomorrow|By 2030, I [[will finish]] my master's.|By 2030, I [[will have finished]] my master's.|"By + future time" is the strongest signal for the future perfect.|pt:0:now;pt:0.5:finished before;pt:0.8:by 2030
+By 2030, I ___ my master's degree. | will have finished | will finish ;; will be finishing ;; finish | Finished before a future time → will have + participle.
+This time tomorrow, I ___ on a beach. | will be lying | will lie ;; will have lain ;; lie | In progress at a future moment → will be + -ing.
+By the time you arrive, we ___ dinner. | will have eaten | will eat ;; are eating ;; eat | Completed before you arrive → future perfect.
+Don't call at 8; I ___ dinner then. | will be having | will have had ;; will having ;; had | In progress at 8 → future continuous.
+By next June, {P} ___ here for ten years. | will have worked | will work ;; works ;; has worked | Duration up to a future point → future perfect.
+By the end of this year, the company ___ 2,000 robots. | will have produced | will produce ;; produces ;; is producing | A total completed by a future time → future perfect.
+At midnight, we ___ for six hours. | will have been driving | will drive ;; are driving ;; drive | Duration of an activity up to a future time.
+___ you be using the car tonight? | Will | Are ;; Do ;; Have | Asking politely about plans → future continuous.
+By the time the exam starts, I ___ for three months. | will have been studying | will study ;; am studying ;; study | Duration up to a future time → future perfect continuous.
+I ___ for you at the station at 6; look for me. | will be waiting | will have waited ;; wait ;; waited | In progress at 6 → future continuous.
+By Friday, I ___ all the reports. | will have checked | will check ;; check ;; checked | Completed by Friday → future perfect.
+By 2035, she ___ as a doctor for a decade. | will have been working | will work ;; works ;; is working | Duration up to a future point → future perfect continuous.
+
+@inversion|3|Inversion for emphasis|Đảo ngữ để nhấn mạnh|After a negative or limiting expression at the start (Never, Rarely, Not only, Hardly, Only after, Under no circumstances), put the helper verb before the subject, like a question.|c:Never|aux:have|s:I|v:seen ...||c:Not only|aux:is|s:it|v:fast, but ...||c:Only after|o:the test|aux:did|s:I|v:realise|Never [[I have seen]] such a castle.|Never [[have I seen]] such a castle.|Inversion is a strong Band 8–9 feature in Writing, but use it once or twice per essay, not in every paragraph.|
+Never ___ such a beautiful castle. | have I seen | I have seen ;; I saw ;; did I saw | Never at the start → helper verb + subject.
+Not only ___ fast, but it is also cheap. | is it | it is ;; it ;; does it | Not only at the start → inversion.
+Rarely ___ late for class. | is he | he is ;; does he be ;; he does | Rarely at the start → inversion.
+Hardly ___ arrived when the storm began. | had we | we had ;; did we ;; we have | Hardly ... when → had + subject + participle.
+Only after the test ___ how difficult it was. | did I realise | I realised ;; I did realise ;; realised I | Only after + time → inversion in the main clause.
+Under no circumstances ___ open this door. | should you | you should ;; you shall ;; do you should | Under no circumstances → inversion.
+Little ___ that the Count was a vampire. | did Jonathan know | Jonathan knew ;; knew Jonathan ;; Jonathan did know | Little at the start → did + subject + verb.
+No sooner ___ home than it started to rain. | had I got | I had got ;; did I got ;; I got | No sooner ... than → had + subject + participle.
+Seldom ___ such strong results. | do we see | we see ;; we do see ;; see we | Seldom at the start → do + subject + verb.
+Should you need help, ___ me. | call | you call ;; calling ;; to call | Should you need = If you need; the main clause is a command.
+Were I rich, I ___ a castle. | would buy | will buy ;; bought ;; buy | Were I = If I were → would + verb.
+Not until midnight ___ the truth. | did she discover | she discovered ;; discovered she ;; she did discover | Not until at the start → inversion in the main clause.
+
+@cleft|3|Cleft sentences|Câu chẻ (nhấn mạnh)|Split a sentence to focus on one part: It is/was + focus + that/who... or What + clause + is/was + focus.|c:It was|o:Jonathan|c:who|v:went to the castle||c:What I need|aux:is|o:more practice|[[That]] I need is more practice.|[[What]] I need is more practice.|Clefts are useful in Speaking to sound natural and emphatic: What I really like about my city is...|
+___ I need is more practice. | What | That ;; Which ;; It | What + clause + is + focus.
+It was Jonathan ___ went to the castle. | who | which ;; what ;; whose | It was + person + who.
+It is grammar ___ I find hardest. | that | what ;; where ;; who | It is + focus + that.
+What surprised me ___ the price. | was | were ;; did ;; is being | What-clause + was + focus.
+___ was in 2019 that we met. | It | That ;; What ;; There | It + was + time + that.
+The reason ___ I study English is to study abroad. | why | what ;; because ;; which | The reason why...
+All I want ___ a quiet place to study. | is | are ;; was being ;; be | "All I want" is singular → is.
+What she did ___ call the police. | was | is being ;; did ;; were | What she did was + verb.
+It isn't the money ___ matters. | that | what ;; which is ;; who | It is/isn't + focus + that.
+___ happened was that the server crashed. | What | That ;; It ;; Which | What happened was that...
+It was only when I failed ___ I started to study seriously. | that | what ;; then ;; which | It was only when ... that ...
+The thing ___ annoys me is slow Wi-Fi. | that | what ;; who ;; where | The thing that...
+
+@partic|3|Participle clauses|Mệnh đề phân từ|Shorten clauses with -ing (active), -ed / past participle (passive) or having + participle (an earlier action). The subject must be the same as in the main clause.|v:Having read the letter|x:,|s:she|v:started to cry||v:Published in 1897|x:,|s:Dracula|v:is still popular|[[Having publish]] in 1897, Dracula is popular.|[[Published]] in 1897, Dracula is popular.|Check the hidden subject: "Walking home, the rain started" wrongly says the rain was walking.|
+___ the letter, she started to cry. | Having read | Have read ;; Had read ;; To read | Earlier action → having + participle.
+___ in 1897, Dracula is still popular. | Published | Publishing ;; Having publish ;; Publish | Passive meaning (the book was published) → past participle.
+___ down the street, I met an old friend. | Walking | Walked ;; Walk ;; To walking | Active, at the same time → -ing.
+The man ___ next to me was asleep. | sitting | sit ;; sits ;; who sitting | Reduced relative clause (who was sitting) → -ing.
+___ by the news, he couldn't speak. | Shocked | Shocking ;; Shock ;; Having shock | He was shocked (passive feeling) → past participle.
+The data ___ from users must be protected. | collected | collecting ;; collects ;; which collected | Reduced passive clause (that is collected).
+___ finished the project, we celebrated. | Having | Have ;; Had ;; Being | Having + participle for the earlier action.
+___ the way, I used a map. | Not knowing | Knowing not ;; Don't knowing ;; Not knew | Negative participle → not + -ing.
+___ carefully, the plan could work. | Done | Doing ;; Do ;; Having do | If it is done carefully → past participle.
+Anyone ___ to join should register online. | wishing | wished ;; wishes ;; wish | Reduced relative clause (who wishes) → -ing.
+___ from the castle, the view was amazing. | Seen | Seeing ;; See ;; Saw | The view was seen (passive) → past participle.
+___ in Hanoi, she knows the city well. | Having grown up | Grown up ;; Have grown up ;; Growing upped | Earlier, longer background → having + participle.
+
+@subj|3|The subjunctive and formal "that" clauses|Thức giả định và mệnh đề "that" trang trọng|After words like imperative, essential, vital, suggest, recommend, insist and demand + that, use the base verb for every subject (no -s, no past form).|c:It is imperative that|s:every student|v:arrive (base verb)||c:I suggest that|s:she|v:take|It is essential that he [[is]] informed.|It is essential that he [[be]] informed.|This is a strong Band 8–9 structure for Writing Task 2 recommendations.|
+It is imperative that every student ___ on time. | arrive | arrives ;; arrived ;; will arrive | Subjunctive → base verb, even with a singular subject.
+The doctor recommended that he ___ more water. | drink | drinks ;; drank ;; drinking | recommend that + base verb.
+I suggest that she ___ the course. | take | takes ;; took ;; taking | suggest that + base verb.
+It is essential that the data ___ secure. | be | is being ;; are ;; was | Subjunctive of "be" → be.
+They insisted that he ___ immediately. | leave | leaves ;; left ;; leaving | insist that + base verb.
+It's vital that everyone ___ the rules. | follow | follows ;; followed ;; following | vital that + base verb.
+The manager demanded that the report ___ finished by Friday. | be | is ;; was ;; will | demand that + be + participle.
+I'd rather you ___ smoke here. | didn't | don't ;; not ;; won't | would rather + person + past form.
+It's time we ___ home. | went | go ;; will go ;; going | It's time + subject + past form.
+She requested that the meeting ___ postponed. | be | is ;; was ;; been | request that + be + participle.
+It is crucial that he ___ informed. | be | is ;; was ;; being | crucial that + be.
+It is recommended that each candidate ___ a pencil. | bring | brings ;; brought ;; bringing | Subjunctive → base verb.
+
+@wish|3|Wish, if only and would rather|Wish, if only và would rather|wish + past = unreal now. wish + past perfect = regret about the past. wish + would = annoyance or a wish for change. would rather + base verb (me), would rather + person + past (someone else).|c:I wish|s:I|v:had (now)||c:I wish|s:I|v:had gone (past)||c:I'd rather|s:you|v:told (someone else)|I wish I [[have]] more time.|I wish I [[had]] more time.|Use "were" for every person: I wish I were taller.|
+I wish I ___ more time. | had | have ;; will have ;; would have | Unreal present → wish + past.
+I wish I ___ to that party last night. | had gone | went ;; go ;; would go | Regret about the past → wish + past perfect.
+If only it ___ raining! | would stop | stops ;; stopped yesterday ;; will stop | Wanting a change → if only + would.
+She wishes she ___ speak French. | could | can ;; will ;; would can | Unreal ability now → could.
+I'd rather ___ at home tonight. | stay | to stay ;; staying ;; stayed | would rather + base verb (same person).
+I'd rather you ___ me the truth. | told | tell ;; will tell ;; telling | would rather + another person + past.
+I wish you ___ making that noise! | would stop | stop ;; will stop ;; stopping | Annoyance → wish + would.
+He wishes he ___ that comment. | hadn't made | didn't make ;; doesn't make ;; wouldn't make | Regret about the past → past perfect.
+If only I ___ harder at school. | had studied | studied ;; study ;; would study | Regret about the past → past perfect.
+I'd rather not ___ about it. | talk | to talk ;; talking ;; talked | would rather not + base verb.
+I wish I ___ in Europe. | lived | live ;; will live ;; am living | Unreal present → past.
+We'd rather ___ by train than by bus. | go | to go ;; going ;; went | would rather + base verb + than.
+
+@causative|3|Causatives: have / get something done|Thể sai khiến: have / get something done|have / get + object + past participle = someone does it for you. have + person + base verb; get + person + to + verb.|aux:have / get|o:my hair|v:cut (participle)||aux:have|o:the mechanic|v:check||aux:get|o:someone|v:to fix|I had my hair [[cutted]] yesterday.|I had my hair [[cut]] yesterday.|"I cut my hair" means you did it yourself; "I had my hair cut" means a hairdresser did it.|
+I had my hair ___ yesterday. | cut | cutted ;; cutting ;; to cut | have + object + past participle (cut → cut).
+She is getting her car ___. | repaired | repair ;; repairing ;; to repair | get + object + past participle.
+We need to have the roof ___. | fixed | fix ;; fixing ;; to fix | have + object + past participle.
+I'll get someone ___ the printer. | to fix | fix ;; fixed ;; fixing | get + person + to + verb.
+He had his phone ___ on the bus. | stolen | steal ;; stole ;; stealing | have something done can also describe bad experiences.
+I had the mechanic ___ the brakes. | check | to check ;; checked ;; checking | have + person + base verb.
+They got their house ___ last month. | painted | paint ;; painting ;; to paint | get + object + past participle.
+Where do you have your laptop ___? | serviced | service ;; servicing ;; to service | have + object + past participle.
+She got her brother ___ her move. | to help | help ;; helped ;; helping | get + person + to + verb.
+We're having a new kitchen ___. | installed | install ;; installing ;; to install | have + object + past participle.
+You should get your eyes ___. | tested | test ;; testing ;; to test | get + object + past participle.
+I'll have my assistant ___ you the files. | send | to send ;; sent ;; sending | have + person + base verb.
+
+@nominal|3|Nominalisation (formal noun forms)|Danh từ hóa (văn phong trang trọng)|Academic writing often turns verbs and adjectives into nouns: increase → an increase, decide → a decision, important → the importance.|v:Prices increased sharply.|x:→|o:There was a sharp increase in prices.||v:They decided to leave.|x:→|o:Their decision to leave...|There has been a sharp [[increased]] in prices.|There has been a sharp [[increase]] in prices.|Nominalisation helps IELTS Writing Task 1 and Task 2 sound academic, but don't overuse it.|
+The ___ of the new law caused protests. | introduction | introduce ;; introducing ;; introduced | After "the ... of" → a noun.
+There has been a sharp ___ in prices. | increase | increased ;; increasing ;; increasingly | After "a sharp" → a noun.
+The ___ of the data took two weeks. | analysis | analyse ;; analysing ;; analytic | Noun form of "analyse".
+Her ___ to leave surprised us. | decision | decide ;; deciding ;; decisive | Noun form of "decide".
+Unemployment led to a ___ in living standards. | decline | declined ;; declining ;; declines | After "a" → a noun.
+The ___ of the bridge took five years. | construction | construct ;; constructing ;; constructed | Noun form of "construct".
+There is growing ___ that AI will change work. | concern | concerned ;; concerning ;; concerns | Uncountable noun after "growing".
+The ___ of education cannot be ignored. | importance | important ;; importantly ;; import | Noun form of "important".
+A ___ in emissions is necessary. | reduction | reduce ;; reducing ;; reduced | Noun form of "reduce".
+The ___ between the two groups was clear. | difference | different ;; differ ;; differently | Noun form of "different".
+Their ___ of the problem was impressive. | understanding | understand ;; understood ;; understandable | Noun form of "understand".
+The ___ of public transport would cut traffic. | expansion | expand ;; expanding ;; expanded | Noun form of "expand".
+
+@hedge|3|Hedging (cautious academic language)|Ngôn ngữ thận trọng trong văn học thuật|Avoid overclaiming. Use tend to, appear to, may, might, it could be argued that, to some extent, arguably, it is likely that.|c:It could be argued that|s:...||s:Children|aux:tend to|v:...||c:This|aux:may|v:be due to ...|This [[proves]] that diet is the only cause.|This [[suggests]] that diet plays a role.|Examiners reward measured claims. "All", "always" and "proves" are risky in Task 2.|
+It ___ that the policy has failed. | appears | is appearing ;; appear ;; appeared to | "It appears that..." is a common hedge.
+This ___ be due to a lack of funding. | may | must definitely ;; will certainly ;; is | Possible cause → may.
+The results ___ that diet plays a role. | suggest | prove definitely ;; are suggest ;; suggests | Plural subject + cautious verb → suggest.
+It is ___ that prices will rise. | likely | like ;; liked ;; likely to | It is likely that...
+There is ___ evidence that sleep affects memory. | some | a ;; many ;; an | "Evidence" is uncountable → some.
+Children who read more ___ to perform better. | tend | tends ;; are tend ;; tending | Plural subject + tend to.
+This is ___ the most important factor. | arguably | argue ;; argued ;; arguable | Adverb hedge → arguably.
+To some ___, the problem is economic. | extent | extend ;; extents ;; extended | Fixed phrase: to some extent.
+It ___ be argued that cities are too crowded. | could | must ;; will ;; should to | It could be argued that...
+These figures ___ indicate a downward trend. | seem to | seems to ;; are seem ;; seeming | Plural subject (these figures) → seem to.
+It is ___ believed that exercise improves mood. | widely | wide ;; widen ;; widened | Adverb before the participle → widely believed.
+Most experts agree that AI is ___ to change education. | likely | probably ;; possibly ;; like | be likely to + verb.
+
+@emph|3|Emphasis, question tags and short responses|Nhấn mạnh, câu hỏi đuôi và câu trả lời ngắn|Use do/does/did for emphasis. Question tags repeat the helper verb with the opposite polarity. So/Neither + helper + subject agree with someone.|s:I|aux:do|v:want to help||s:You're right,|aux:aren't|s:you?||c:So|aux:do|s:I||c:Neither|aux:does|s:he|I'm right, [[amn't]] I?|I'm right, [[aren't]] I?|Positive sentence → negative tag; negative sentence → positive tag.|
+I ___ want to help, but I'm busy. | do | does ;; am ;; did to | Emphatic do + base verb.
+She ___ call you; she just forgot to text. | did | does ;; do ;; was | Emphatic did for the past.
+You don't like it, ___ you? | do | don't ;; are ;; aren't | Negative sentence → positive tag.
+He's a student, ___ he? | isn't | is ;; doesn't ;; hasn't | He's = he is → isn't he?
+They went home, ___ they? | didn't | weren't ;; don't ;; did | Past simple → didn't.
+Let's go, ___ we? | shall | will ;; don't ;; do | Let's → shall we?
+I'm right, ___ I? | aren't | amn't ;; am not ;; don't | I'm → aren't I?
+Nobody called, ___ they? | did | didn't ;; do ;; were | "Nobody" is negative → positive tag with they.
+She can swim, and so ___ I. | can | do ;; am ;; could | So + same helper (can) + subject.
+I don't like it, and neither ___ he. | does | doesn't ;; is ;; has | Neither + positive helper + subject.
+"I love this book." — "So ___ I!" | do | am ;; love ;; does | Agreeing with a present simple statement → So do I.
+You will help me, ___ you? | won't | will ;; don't ;; wouldn't | will → won't.
+
+@ellipsis|3|Ellipsis and substitution|Lược bỏ và thay thế|Avoid repetition: replace a noun with one/ones, a clause with so/not, or leave out words after a helper verb (I can't, but she can).|o:a pen|x:→|o:one||o:I think it will.|x:→|o:I think so.||o:I can't speak French, but she can|x:(speak French)|"Can you lend me a pen?" "Sorry, I don't have [[it]]."|"Can you lend me a pen?" "Sorry, I don't have [[one]]."|Smooth substitution makes Speaking sound fluent and natural (Band 7+ coherence).|
+I asked him to come, but he didn't want ___. | to | ~it ;; ~that ;; ∅ (nothing) | Keep "to" when you drop the verb: he didn't want to.
+"Is it going to rain?" — "I hope ___." | not | no ;; don't ;; none | I hope not = I hope it won't.
+"Will you pass?" — "I think ___." | so | it ;; that ;; yes | I think so = I think I will.
+I don't have a pen. Can you lend me ___? | one | it ;; this ;; ones | Any pen (not a specific one) → one.
+These shoes are too small. I need bigger ___. | ones | one ;; it ;; them | Plural substitute → ones.
+She likes jazz, and I ___ too. | do | like ;; am ;; does | Repeat only the helper: I do too.
+He said he would finish it, and he ___. | did | done ;; has ;; was | Past → did.
+"Are you coming?" — "I'm afraid ___." | not | no ;; don't ;; none | I'm afraid not = unfortunately, no.
+I've read the first book but not the second ___. | one | it ;; ones ;; this | Singular substitute → one.
+I can't speak French, but my sister ___. | can | does ;; speaks ;; is | Repeat the same modal: can.
+"Did you finish it?" — "Yes, I ___." | did | finished ;; done ;; have finished | Short answer with the helper verb.
+"Do you think it's true?" — "I suppose ___." | so | it ;; this ;; yes | I suppose so.
+
+@parallel|3|Parallel structure|Cấu trúc song song|Items in a list or pair must have the same grammatical form: reading, writing and coding; to travel, to learn and to meet.|o:reading|x:,|o:writing|x:and|o:coding||o:to plan|x:,|o:build|x:and|o:launch|I like reading, writing and [[to code]].|I like reading, writing and [[coding]].|Check every list in your essay: all nouns, all -ing forms, or all base verbs.|
+I like reading, writing and ___. | coding | to code ;; code ;; I code | Match the -ing forms.
+She is smart, kind and ___. | funny | has humour ;; she is funny ;; funnily | Match the adjectives.
+The course teaches you how to plan, build and ___ an app. | launch | launching ;; launched ;; to launching | Match the base verbs.
+He wants to travel, to learn and ___ new people. | to meet | meeting ;; met ;; meets | Match "to + verb".
+The job requires patience, skill and ___. | creativity | creative ;; be creative ;; creatively | Match the nouns.
+We can go by bus or ___ train. | by | with ;; on the ;; in | Match the pattern: by bus or by train.
+Not only is it cheap, but it is also ___. | fast | fastly ;; has speed ;; speeding | Match the adjectives.
+She both studies and ___ part-time. | works | working ;; work ;; to work | Match the verb forms: studies and works.
+The plan was either brilliant or ___. | foolish | a fool ;; foolishness ;; foolishly | Match the adjectives after either...or.
+I prefer walking to ___. | driving | drive ;; to drive ;; drove | prefer -ing to -ing.
+He spoke clearly, slowly and ___. | confidently | confident ;; with confident ;; confidence | Match the adverbs.
+Students should attend lectures, complete tasks and ___ questions. | ask | asking ;; to ask ;; asked | Match the base verbs after "should".
+
+@quant|4|Number, amount and quantity phrases|Cụm từ chỉ số lượng|the number of + plural noun → singular verb. a number of + plural noun → plural verb. Half of / most of / percent of → the verb agrees with the noun after "of".|c:The number of|o:students|v:has increased||c:A number of|o:students|v:have left||c:Half of the|o:cake|v:was eaten|The number of students [[have]] increased.|The number of students [[has]] increased.|This is essential for IELTS Writing Task 1 when describing data.|
+The number of students ___ increased. | has | have ;; are ;; were | The subject is "the number" → singular.
+A number of problems ___ been reported. | have | has ;; is ;; was | "A number of" = several → plural.
+Most of the ___ was lost. | data | datas ;; datum's ;; a data | "Data" as an uncountable mass → was.
+Most of ___ students passed. | the | ∅ (no article) ;; a ;; an | most of + the + noun.
+Half of the students ___ absent. | were | was ;; is ;; has | "Students" is plural → were.
+Half of the cake ___ eaten. | was | were ;; are ;; have | "Cake" is singular → was.
+None of the information ___ useful. | was | were ;; are ;; have been | "Information" is uncountable → singular.
+One of my friends ___ in Canada. | lives | live ;; living ;; are living | The subject is "one" → singular.
+The majority of the students ___ from Asia. | come | comes ;; coming ;; is come | "The majority of" + plural noun takes a plural verb.
+Every student and teacher ___ invited. | was | were ;; are ;; have | "Every" keeps the verb singular.
+Plenty of ___ is available. | information | informations ;; info's ;; an information | Uncountable noun → no -s.
+Twenty percent of the population ___ over 60. | is | are ;; have ;; were | "Population" is singular → is.
+A large amount of ___ was wasted. | money | dollars ;; coins ;; people | "Amount" goes with uncountable nouns.
+
+@advpass|4|Advanced passive: it is said that…|Bị động nâng cao: it is said that…|Report general opinions without naming who holds them: It is said / believed / thought that... or Subject + is said / believed + to + verb (or to have + participle for the past).|c:It is said that|s:the castle|v:is haunted||s:The Count|aux:is said|v:to have lived ...|People [[says]] that the castle is haunted.|[[It is said]] that the castle is haunted.|Very useful in Writing Task 2 to introduce a view: It is widely believed that...|
+It ___ that the castle is haunted. | is said | says ;; is saying ;; said | It is said that... (general opinion).
+He ___ to be the richest man in town. | is believed | believes ;; is believing ;; believed | Subject + is believed + to + verb.
+The Count is said ___ for centuries. | to have lived | living ;; to live ;; lived | A past/ongoing period → to have + participle.
+It ___ that prices will rise. | is expected | expects ;; is expecting ;; expected | It is expected that...
+She is thought ___ the country last week. | to have left | to leave ;; leaving ;; left | A past event → to have + participle.
+The new model ___ to be released next month. | is expected | expects ;; is expecting ;; expected | Subject + is expected + to + verb.
+It has ___ that the project was a failure. | been argued | argued ;; being argued ;; argue | Present perfect passive: It has been argued that...
+The company ___ to have lost millions. | is reported | reports ;; is reporting ;; reported | Subject + is reported + to have + participle.
+English ___ to be the language of science. | is considered | considers ;; is considering ;; considered | Subject + is considered + to be.
+It is ___ accepted that sleep is important. | widely | wide ;; widen ;; widened | It is widely accepted that...
+He is known ___ several languages. | to speak | speaking ;; speak ;; to speaking | be known + to + verb.
+It is ___ that more people will work remotely. | predicted | predict ;; predicting ;; prediction | It is predicted that...

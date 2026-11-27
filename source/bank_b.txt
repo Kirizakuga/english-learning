@@ -1,0 +1,196 @@
+@ppc|2|Present perfect continuous|Hiện tại hoàn thành tiếp diễn|Use have/has been + -ing for an activity that started in the past and is still going on, or has just stopped with a visible result. Use the simple form for finished amounts (three chapters).|s:I / We / They|aux:have been|v:verb-ing|x:for / since||s:He / She / It|aux:has been|v:verb-ing|I [[am learning]] English for five years.|I [[have been learning]] English for five years.|With state verbs (know, own, believe) use the present perfect simple instead.|seg:-0.7:0:still going on;pt:0:now
+I ___ English for five years. | have been learning | am learning ;; learn ;; was learning | Started in the past and still continuing → present perfect continuous.
+She's tired because she ___ all day. | has been working | is working ;; works ;; has work | A recent activity with a visible result now.
+How long ___ waiting? | have you been | are you ;; do you ;; did you | How long + present perfect continuous.
+It ___ since this morning. | has been raining | is raining ;; rains ;; was raining | "Since this morning" and still going on.
+{P} ___ on this bug for three hours. | has been working | is working ;; works ;; have been working | One person + for + duration → has been + -ing.
+Your eyes are red. ___ crying? | Have you been | Are you being ;; Did you ;; Do you | A visible result of a recent activity.
+We ___ for the bus since 7 a.m. | have been waiting | are waiting ;; wait ;; waited | Since + still continuing.
+I ___ three chapters of Dracula today. | have read | have been reading ;; am reading ;; reads | A finished amount (three chapters) → present perfect simple.
+They ___ each other since university. | have known | have been knowing ;; know ;; are knowing | "Know" is a state verb → present perfect simple.
+He ___ to call you all morning. | has been trying | is trying ;; tries ;; try | Repeated activity over a period up to now.
+The price of rice ___ steadily since 2020. | has been rising | is rising ;; rises ;; rose | A trend from a past point up to now.
+How long ___ you been studying for IELTS? | have | did ;; are ;; do | Present perfect continuous question: have + you + been + -ing.
+
+@pastperf|2|Past perfect|Quá khứ hoàn thành|Use had + past participle for an action that happened before another past action.|s:Subject|aux:had|v:past participle||x:earlier past|x:→|x:later past (past simple)|When I arrived, the train [[has left]].|When I arrived, the train [[had left]].|You only need the past perfect when the order of two past events matters.|pt:-0.8:had left;pt:-0.4:arrived;pt:0:now
+When I arrived, the train ___. | had already left | already leaves ;; has already left ;; already leave | It left before I arrived → past perfect.
+She had never ___ snow before she went to Japan. | seen | saw ;; see ;; seeing | had + past participle (see → saw → seen).
+After he ___ his homework, he went out. | had finished | has finished ;; finishes ;; was finishing | The homework came first → past perfect.
+I realised I ___ my wallet at home. | had left | have left ;; leave ;; was leaving | Leaving the wallet happened before realising.
+By 2020, {P} ___ in three countries. | had lived | has lived ;; lives ;; is living | By a past time → past perfect.
+They ___ married for ten years when they moved. | had been | have been ;; are ;; has been | A period before another past event → past perfect.
+The film ___ before we got there. | had started | has started ;; starts ;; starting | The film started first → past perfect.
+I didn't know who he was because I ___ him before. | hadn't met | haven't met ;; didn't meet ;; don't meet | Before that past moment → past perfect.
+Jonathan felt uneasy because the landlady ___ him not to go. | had begged | has begged ;; begs ;; was begged | Her begging came before his feeling → past perfect.
+Had you ever ___ abroad before last year? | travelled | travel ;; travelling ;; travels | had + past participle.
+When we got to the cinema, the tickets ___ out. | had sold | have sold ;; sell ;; are selling | Sold out before we arrived → past perfect.
+She was nervous because she ___ in public before. | had never spoken | has never spoken ;; never speaks ;; was never speaking | Experience up to a past moment → past perfect.
+
+@cond1|2|Conditionals: zero, first and second|Câu điều kiện loại 0, 1, 2|Zero: If + present, present (facts). First: If + present, will + verb (real future). Second: If + past, would + verb (unreal or imaginary now).|c:If|s:present|x:,|aux:will|v:verb||c:If|s:past (were)|x:,|aux:would|v:verb|If I [[have]] one more month, I [[will]] add more data.|If I [[had]] one more month, I [[would]] add more data.|Never put will or would in the if-clause.|
+If you heat ice, it ___. | melts | melted ;; would melt ;; melting | A general fact → zero conditional (present + present).
+If it rains tomorrow, we ___ at home. | will stay | would stay ;; stayed ;; staying | A real future possibility → first conditional.
+If I ___ rich, I would travel the world. | were | am ;; will be ;; would be | An imaginary situation → second conditional (If I were...).
+If I had one more month, I ___ more data. | would add | will add ;; add ;; added | Unreal present → would + verb.
+Unless you ___, you'll be late. | hurry | don't hurry ;; will hurry ;; hurried | "Unless" = if not, followed by the present.
+If she ___ harder, she would pass. | studied | studies ;; will study ;; would study | Second conditional → past in the if-clause.
+What ___ you do if you won the lottery? | would | will ;; do ;; did | Imaginary situation → would.
+If you ___ the button, the light turns on. | press | will press ;; pressed ;; would press | Zero conditional → present in both parts.
+I ___ you if I see him. | will tell | would tell ;; told ;; telling | First conditional → will in the result.
+If I ___ you, I would accept the offer. | were | am ;; was being ;; will be | Advice → If I were you...
+If they ___ the bus, they will arrive on time. | catch | will catch ;; caught ;; would catch | First conditional → present in the if-clause.
+We would buy a house if prices ___ lower. | were | are ;; will be ;; would be | Second conditional → past form in the if-clause.
+
+@cond3|2|Third and mixed conditionals|Câu điều kiện loại 3 và hỗn hợp|Third: If + had + participle, would have + participle (imagining a different past). Mixed: If + had + participle, would + verb now (past cause, present result).|c:If|s:had + participle|x:,|aux:would have|v:participle||c:If|s:had + participle|x:,|aux:would|v:verb (now)|If I had studied harder, I [[would pass]] the exam.|If I had studied harder, I [[would have passed]] the exam.|Use the mixed form when the result is still true now.|pt:-0.6:imagined past;pt:0:now
+If I had studied harder, I ___ the exam. | would have passed | would pass ;; will pass ;; had passed | Imagining a different past result → would have + participle.
+If she ___ earlier, she wouldn't have missed the train. | had left | left ;; has left ;; would leave | Third conditional → had + participle in the if-clause.
+If I had taken that job, I ___ rich now. | would be | would have been ;; will be ;; am | Past cause, present result ("now") → mixed: would + verb.
+We ___ lost if we had used the map. | wouldn't have got | wouldn't get ;; won't get ;; didn't get | Third conditional result → would have + participle.
+If you had told me, I ___ you. | would have helped | would help ;; will help ;; helped | Third conditional result.
+If I ___ the alarm, I wouldn't have been late. | had heard | heard ;; have heard ;; would hear | Third conditional → had + participle.
+If she hadn't missed the flight, she ___ in Paris now. | would be | would have been ;; is ;; will be | "Now" → mixed conditional.
+What would you have done if you ___ the lottery? | had won | won ;; have won ;; would win | Third conditional → had + participle.
+If they had invested earlier, they ___ more money today. | would have | would have had ;; will have ;; had | "Today" → mixed: would + have (the main verb).
+Had I known, I ___ come. | would have | will ;; would ;; had | Inverted third conditional: Had I known = If I had known.
+If it hadn't rained, we ___ the match. | would have played | would play ;; will play ;; played | Third conditional result.
+If he hadn't helped me, I ___ my job now. | wouldn't have | wouldn't have had ;; won't have ;; don't have | "Now" → mixed: wouldn't + have.
+
+@passive|2|The passive voice|Câu bị động|be + past participle. Use it when the action matters more than who did it, or the doer is unknown. Add "by + doer" only if it's important.|s:Object|aux:am / is / are / was / were / been|v:past participle|x:(by + doer)|Why is it [[lock]]? That AI is [[host]] on Azure.|Why is it [[locked]]? That AI is [[hosted]] on Azure.|The tense is shown by "be": is done, was done, has been done, will be done.|
+The report ___ every Monday. | is published | publishes ;; is publish ;; published | Present simple passive → is + participle.
+This castle ___ in the 15th century. | was built | built ;; is built ;; has built | Past simple passive → was + participle.
+The bug ___ yet. | hasn't been fixed | hasn't fixed ;; didn't fix ;; isn't fixing | Present perfect passive → hasn't been + participle.
+Why is it ___ behind a login wall? | locked | lock ;; locking ;; locks | Passive → be + past participle.
+The results will ___ next week. | be announced | announce ;; announced ;; be announce | Future passive → will be + participle.
+English ___ in many countries. | is spoken | speaks ;; is speaking ;; spoken | Present simple passive.
+The windows ___ right now. | are being cleaned | are cleaning ;; are cleaned ;; clean | Present continuous passive → are being + participle.
+My phone ___ yesterday. | was stolen | stole ;; is stolen ;; was stole | Past passive → was + participle (steal → stolen).
+That AI is ___ on Azure. | hosted | host ;; hosting ;; hosts | Passive → is + participle.
+The data must ___ carefully. | be checked | checked ;; check ;; be check | Modal passive → must be + participle.
+A new model ___ by the team last month. | was released | released ;; is released ;; has released | Past passive.
+The letter ___ by Jonathan himself. | was written | wrote ;; was wrote ;; has written | Past passive (write → written).
+
+@rel|2|Relative clauses|Mệnh đề quan hệ|who = people, which = things, whose = possession, where = places, when = times. Non-defining clauses (with commas) use which/who, never that.|o:the person|c:who|v:...||o:the thing|c:which / that|v:...||o:, my city ,|c:which|v:... (commas)|He was the one [[that interview]] me.|He was the one [[who interviewed]] me.|If you can remove the clause and the sentence still makes sense, it's non-defining: use commas and no "that".|
+He was the one ___ interviewed me. | who | which ;; whose ;; what | People → who.
+This is the laptop ___ I bought last week. | which | who ;; whose ;; where | Things → which (or that).
+Hanoi, ___ is the capital, has many lakes. | which | that ;; who ;; where | Non-defining clause → which, never that.
+The town ___ I grew up is small. | where | which ;; who ;; whose | A place where something happens → where.
+The student ___ essay won the prize is here. | whose | who ;; who's ;; which | Possession → whose.
+My brother, ___ lives in Da Nang, is a doctor. | who | that ;; which ;; whom | Non-defining clause about a person → who.
+That's the reason ___ I left. | why | which ;; what ;; where | the reason why.
+The man to ___ I spoke was very kind. | whom | who ;; which ;; that | After a preposition → whom.
+I passed the exam, ___ surprised everyone. | which | that ;; what ;; who | "Which" can refer to the whole previous clause.
+2019 was the year ___ we met. | when | which ;; where ;; what | A time → when.
+The people ___ live next door are noisy. | who | which ;; whose ;; where | People → who.
+Is this ___ you were looking for? | what | which ;; that ;; who | "What" = the thing that.
+
+@report|2|Reported speech|Câu tường thuật|When the reporting verb is in the past, move tenses back one step (am → was, have → had, will → would). Reported questions use normal word order.|s:"I am busy."|x:→|s:He said|c:(that)|v:he was busy||s:"Where do you live?"|x:→|v:She asked where I lived|She asked me where [[did I live]].|She asked me where [[I lived]].|Say + (that); tell + person: She told me... / She said that...|
+She said that she ___ tired. | was | is being ;; will ;; has | Backshift: am → was.
+He told me he ___ the film already. | had seen | has seen ;; saw ;; sees | Backshift: have seen → had seen.
+She asked me where ___. | I lived | did I live ;; do I live ;; I did live | Reported questions use statement word order.
+He said he ___ call me the next day. | would | will ;; shall ;; can | Backshift: will → would.
+They told us ___ be late. | not to | don't ;; to not ;; not | Reported negative command → tell + person + not to.
+She asked if I ___ help her. | could | can to ;; could to ;; am able | Backshift: can → could.
+He said, "I am busy." → He said he ___ busy. | was | is ;; has been ;; be | Backshift: am → was.
+I asked him ___ he was coming. | whether | that ;; what ;; did | Yes/no questions are reported with if / whether.
+She told me ___ the door. | to close | close ;; closing ;; closed | Reported command → tell + person + to + verb.
+He ___ me that he was leaving. | told | said ;; spoke ;; talked | tell + person; say without a person.
+She ___ that she was hungry. | said | told ;; talked ;; spoke | No person after the verb → said.
+The teacher asked us what we ___ doing. | were | are ;; did ;; do | Backshift: are doing → were doing.
+
+@deduce|2|Modals of deduction|Động từ khuyết thiếu chỉ suy đoán|must = I'm almost sure it's true. can't = I'm almost sure it's not true. might / may / could = it's possible. For the past, add have + participle.|s:Subject|aux:must / might / can't|v:be / verb||s:Subject|aux:must / might / can't|v:have + participle (past)|He [[must not have]] seen it; he was abroad.|He [[can't have]] seen it; he was abroad.|The opposite of "must" for deduction is "can't", not "mustn't".|
+He's been working all day. He ___ be tired. | must | can't ;; should ;; may not | Strong logical conclusion → must.
+That ___ be Mai at the door; she's in Japan. | can't | must ;; mustn't ;; should | Sure it's not true → can't.
+She ___ have forgotten the meeting; she never misses one. | can't | must ;; should ;; would | Sure it didn't happen → can't have.
+The lights are off. They ___ have gone out. | must | can't ;; should ;; would | Strong conclusion about the past → must have.
+I'm not sure where he is. He ___ be in the library. | might | must ;; can't ;; has to | Just a possibility → might.
+You ___ have seen him; he was abroad. | can't | must ;; should ;; would | Impossible → can't have.
+The ground is wet. It ___ have rained last night. | must | can't ;; should ;; could not | Strong conclusion about the past → must have.
+She ___ be at home. I'm not sure. | may | must ;; can't ;; has to | A possibility → may.
+You ___ be joking! That's impossible. | must | can ;; should ;; would | "You must be joking" = I'm sure you're joking.
+He failed the test. He ___ have studied enough. | can't | mustn't ;; shouldn't ;; might | Sure he didn't → can't have.
+The castle ___ be very old; look at the stones. | must | can't ;; mustn't ;; shouldn't | A conclusion from evidence → must.
+I can't find my phone. I ___ have left it in the taxi. | might | must not ;; can't ;; shouldn't | A possibility about the past → might have.
+
+@adjadv|2|Adjectives, adverbs and adjective order|Tính từ, trạng từ và trật tự tính từ|Adjectives describe nouns; adverbs (often -ly) describe verbs and adjectives. Order before a noun: opinion → size → age → shape → colour → origin → material → noun.|o:opinion|o:size|o:age|o:colour|o:material|s:noun||v:verb|x:adverb (-ly)|I [[very like]] going outside.|I [[really like]] going outside.|"Very" can't modify a verb. Use "really" or "very much" at the end: I like it very much.|
+She speaks English very ___. | fluently | fluent ;; fluency ;; more fluent | Describing how she speaks (a verb) → adverb.
+He drives very ___. | carefully | careful ;; care ;; carefulness | Describing a verb → adverb.
+I really ___ going outside. | like | very like ;; like very ;; very much like | "Really" can go before a verb; "very" can't.
+She has ___ hair. | long black | black long ;; long and black's ;; black and long's | Size before colour.
+This is a ___ table. | beautiful old wooden | wooden old beautiful ;; old beautiful wooden ;; beautiful wooden old | Opinion → age → material.
+The exam was ___ difficult. | extremely | extreme ;; extremity ;; extremer | An adverb modifies the adjective "difficult".
+The plan worked ___. | well | good ;; goodly ;; nice | The adverb of "good" is "well".
+He looked ___ at me. | angrily | angry ;; anger ;; angrier | Describing the action of looking → adverb.
+That's a ___ idea. | really interesting | real interesting ;; really interested ;; real interested | Adverb (really) + -ing adjective for the thing.
+She is ___ about the trip. | excited | exciting ;; excite ;; excitedly | -ed for feelings, -ing for the thing that causes them.
+The film was ___. | boring | bored ;; bore ;; boredly | The film causes the feeling → -ing.
+We bought a ___ carpet. | lovely small Persian | Persian small lovely ;; small lovely Persian ;; lovely Persian small | Opinion → size → origin.
+
+@link|2|Linking words: contrast, reason, result, addition|Từ nối: tương phản, nguyên nhân, kết quả, bổ sung|although / even though / because + clause. despite / in spite of / because of / due to + noun or -ing. however / therefore / moreover start a new sentence or follow a semicolon, with a comma after.|c:Although|s:it rained|x:,|v:we went out||c:Despite|o:the rain|x:,|v:we went out||s:It rained.|c:However,|v:we went out|[[Despite]] it was raining, we went out.|[[Although]] it was raining, we went out.|Despite never takes a full clause directly. Use "despite the fact that" if you need one.|
+___ it was raining, we went out. | Although | Despite ;; However ;; Because of | A full clause (subject + verb) → although.
+___ the rain, we went out. | Despite | Although ;; However ;; Even though | A noun → despite.
+The plan is cheap. ___, it is risky. | However | Although ;; Despite ;; Because | A new sentence showing contrast → However,
+I stayed home ___ I was sick. | because | because of ;; despite ;; although | A full clause showing reason → because.
+She failed ___ her hard work. | in spite of | although ;; even though ;; because | A noun phrase showing contrast → in spite of.
+I like tea, ___ my brother prefers coffee. | whereas | despite ;; moreover ;; therefore | Comparing two different facts → whereas.
+He was tired; ___, he kept working. | nevertheless | because ;; despite ;; although | After a semicolon, a contrast adverb → nevertheless.
+The flight was delayed ___ the storm. | due to | because ;; although ;; owing | A noun showing reason → due to.
+Practise every day; ___, you won't improve. | otherwise | therefore ;; moreover ;; however | "If not" → otherwise.
+The course is free. ___, it gives you a certificate. | Moreover | However ;; Although ;; Despite | Adding a positive point → Moreover,
+She studied hard; ___, she passed. | therefore | however ;; although ;; despite | A result → therefore.
+___ he is rich, he is not happy. | Even though | In spite of ;; However ;; Due to | A full clause showing strong contrast → even though.
+
+@splice|2|Sentence boundaries and comma splices|Ranh giới câu và lỗi nối câu bằng dấu phẩy|Two complete sentences can't be joined by a comma alone. Use a full stop, a semicolon, or a comma + and / but / so.|s:Sentence 1|x:.|s:Sentence 2||s:Sentence 1|x:, so / , but|s:Sentence 2||s:Sentence 1|x:;|s:Sentence 2|It looks good[[,]] help me install it.|It looks good[[.]] Help me install it.|This is one of your most frequent habits. Before each comma, ask: could both sides stand alone? If yes, use a full stop.|
+___ | I've changed my mind. Let's build something else. | I've changed my mind, let's build something else. ;; I've changed my mind let's build something else. ;; I've changed, my mind let's build something else. | Two complete sentences → separate them with a full stop.
+___ | It looks good. Help me install it. | It looks good, help me install it. ;; It looks good help me install it. ;; It looks, good help me install it. | A statement and a command are two sentences.
+___ | The plan is simple; however, it is expensive. | The plan is simple, however, it is expensive. ;; The plan is simple however it is expensive. ;; The plan is simple however, it is expensive. | "However" joining two sentences needs a semicolon (or full stop) before it and a comma after.
+___ | I was tired, so I went to bed. | I was tired, I went to bed. ;; I was tired so, I went to bed. ;; I was tired so I, went to bed. | Comma + so joins two sentences correctly.
+___ | Although it was late, we kept working. | Although it was late. We kept working. ;; Although, it was late we kept working. ;; Although it was late we, kept working. | An "although" clause is not a full sentence; join it to the main clause with a comma.
+___ | Rate this one. I got an invitation to write this paper. | Rate this one, I got an invitation to write this paper. ;; Rate this one I got an invitation to write this paper. ;; Rate, this one I got an invitation to write this paper. | A command and a statement are two separate sentences.
+___ | Because the server crashed, the site went down. | Because the server crashed. The site went down. ;; The server crashed, the site went down. ;; Because, the server crashed the site went down. | A "because" clause can't stand alone, and two full sentences can't be joined by a comma alone.
+___ | The bot works well, but it is slow. | The bot works well, it is slow. ;; The bot works well but, it is slow. ;; The bot works well it is slow. | Comma + but joins two contrasting sentences.
+___ | She called me. I didn't answer. | She called me, I didn't answer. ;; She called me I didn't answer. ;; She, called me I didn't answer. | Two complete sentences → a full stop.
+___ | If you need help, just ask. | If you need help. Just ask. ;; If you need help just, ask. ;; If, you need help just ask. | An if-clause joins the main clause with a comma.
+___ | My laptop is old; it still works perfectly. | My laptop is old, it still works perfectly. ;; My laptop is old it still works perfectly. ;; My laptop, is old it still works perfectly. | A semicolon can join two closely related sentences.
+___ | I like coding, and my brother likes design. | I like coding, my brother likes design. ;; I like coding and, my brother likes design. ;; I like coding my brother likes design. | Comma + and joins two sentences.
+
+@depprep|2|Dependent prepositions|Giới từ đi kèm|Many adjectives, verbs and nouns are always followed by a particular preposition. Learn them as chunks: interested in, depend on, good at, related to.|o:interested|c:in||o:depend|c:on||o:good|c:at||o:related|c:to|The program is focused [[about]] research.|The program is focused [[on]] research.|When you learn a new word, learn its preposition with it.|
+I'm interested ___ AI security. | in | on ;; at ;; about | interested in.
+It depends ___ the weather. | on | of ;; in ;; from | depend on.
+She is good ___ maths. | at | in ;; on ;; to | good at.
+The program focuses ___ academic research. | on | about ;; in ;; at | focus on.
+I'm afraid ___ spiders. | of | from ;; about ;; with | afraid of.
+He apologised ___ being late. | for | about ;; of ;; to | apologise for.
+We need to deal ___ this problem. | with | about ;; on ;; for | deal with.
+I'm responsible ___ the backend. | for | of ;; about ;; with | responsible for.
+She is married ___ a doctor. | to | with ;; by ;; for | married to.
+That AI is similar ___ ChatGPT. | to | with ;; as ;; like | similar to.
+I'm tired ___ waiting. | of | from ;; about ;; with | tired of = bored with.
+It is related ___ prompt injection. | to | with ;; about ;; for | related to.
+Please make some changes ___ my profile. | to | on ;; at ;; about | make changes to.
+
+@usedto|2|Used to, be used to, get used to|Used to, be used to, get used to|used to + verb = a past habit that is no longer true. be used to + noun/-ing = be familiar with. get used to + noun/-ing = become familiar with.|s:I|aux:used to|v:verb (past habit)||s:I|aux:am used to|v:noun / -ing (familiar)||s:I|aux:get used to|v:noun / -ing (becoming)|I [[am used to]] play football as a child.|I [[used to]] play football as a child.|In questions and negatives, write "use to": Did you use to...? I didn't use to...|
+I ___ play football every day when I was a child. | used to | use to ;; was used to ;; am used to | A past habit → used to + verb.
+She ___ working late; she does it every week. | is used to | used to ;; uses to ;; use to | Familiar with something now → be used to + -ing.
+You'll soon ___ the cold weather. | get used to | used to ;; be use to ;; get use to | Becoming familiar → get used to.
+Did you ___ live in Hanoi? | use to | used to ;; using to ;; be used to | After "did" → use to (no d).
+I'm not ___ getting up so early. | used to | use to ;; using ;; get used to | be used to + -ing.
+There ___ be a cinema here, but it closed. | used to | use to ;; was used to ;; is used to | A past situation that changed → used to.
+It took me months to ___ driving on the left. | get used to | used to ;; use to ;; be used | The process of becoming familiar → get used to.
+We didn't ___ have smartphones at school. | use to | used to ;; using to ;; be used to | After "didn't" → use to.
+He ___ to living alone now. | is used | used ;; uses ;; use | be used to + -ing → is used to living.
+I ___ drink coffee, but now I prefer tea. | used to | was used to ;; am used to ;; get used to | A past habit → used to + verb.
+After a week, she ___ the new keyboard layout. | got used to | used to ;; uses to ;; was use to | Became familiar → got used to.
+Are you ___ hot weather? | used to | use to ;; using to ;; usual to | be used to + noun.
+
+@sosuch|2|So and such, too and enough|So/such, too/enough|so + adjective/adverb; such (a/an) + (adjective) + noun. too + adjective = more than is good. adjective + enough / enough + noun = as much as needed.|c:so|o:adjective||c:such a|o:adjective + noun||c:too|o:adjective||o:adjective|c:enough|It was [[so]] a good film.|It was [[such]] a good film.|Enough goes AFTER an adjective (old enough) but BEFORE a noun (enough time).|
+It was ___ a good film that I watched it twice. | such | so ;; too ;; very | such + a + adjective + noun.
+The test was ___ difficult that nobody finished. | so | such ;; too ;; enough | so + adjective + that.
+This coffee is ___ hot to drink. | too | so ;; such ;; enough | too + adjective + to (more than is good).
+He isn't old ___ to vote. | enough | too ;; so ;; such | adjective + enough.
+We have ___ time to finish the project. | enough | too ;; so ;; such | enough + noun.
+She speaks ___ quickly that I can't follow. | so | such ;; too much ;; enough | so + adverb + that.
+It's ___ cold for swimming. | too | so ;; such ;; enough | too + adjective + for.
+They are ___ nice people. | such | so ;; too ;; enough | such + adjective + plural noun.
+The bag is ___ heavy for me to carry. | too | so ;; such ;; enough | too + adjective + for someone + to.
+Is the room big ___ for ten people? | enough | too ;; so ;; such | adjective + enough.
+I had ___ much homework that I stayed up late. | so | such ;; too ;; enough | so much + noun + that.
+It was ___ an amazing trip! | such | so ;; too ;; enough | such + an + adjective + noun.

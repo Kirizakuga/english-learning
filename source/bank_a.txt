@@ -1,0 +1,232 @@
+@ps-pc|1|Present simple vs present continuous|Hiện tại đơn và hiện tại tiếp diễn|Use the present simple for habits, facts and states. Use the present continuous for actions happening now or around now.|s:He / She / It|v:verb + s|x:every day||s:I / We / They|aux:am / is / are|v:verb-ing|x:right now|I [[am understanding]] you now.|I [[understand]] you now.|State verbs (know, like, understand, want, taste) are almost never used in the continuous.|pt:0:now;seg:-0.9:0.9:habit (simple)
+{P} usually ___ to university by bus. | goes | is going ;; go ;; going | "Usually" shows a routine, so use the present simple. He/she → goes.
+Look! The children ___ in the garden. | are playing | play ;; plays ;; is playing | "Look!" means it is happening now → present continuous. Plural subject → are.
+Water ___ at 100 degrees Celsius. | boils | is boiling ;; boil ;; boiled | A scientific fact → present simple.
+I ___ for my IELTS exam this month, so I'm busy. | am studying | study ;; studies ;; studied | A temporary situation around now → present continuous.
+{P} ___ coffee and never orders it. | doesn't like | isn't liking ;; don't like ;; not likes | "Like" is a state verb, so no -ing. One person → doesn't.
+The train ___ at 7:15 every morning. | leaves | is leaving ;; leave ;; leaving | Timetables and schedules → present simple.
+Why ___ that heavy coat today? It's hot! | are you wearing | do you wear ;; you are wearing ;; does you wear | An action happening today → present continuous. Question order: are + you + -ing.
+I ___ what you mean now. | understand | am understanding ;; understands ;; understanding | "Understand" is a state verb → present simple.
+My brother ___ in Da Nang, but this month he is staying with us. | lives | is living ;; live ;; living | A permanent situation → present simple.
+She can't come to the phone; she ___ a shower. | is taking | takes ;; take ;; has take | Happening at this moment → present continuous.
+This soup ___ delicious. | tastes | is tasting ;; taste ;; tasting | "Taste" describing quality is a state verb → present simple.
+How often ___ to the gym? | do you go | are you going ;; you go ;; does you go | "How often" asks about habits → present simple with do.
+The number of online learners ___ quickly these days. | is growing | grows up ;; are growing ;; grow | "These days" + a change in progress → present continuous. "The number" is singular.
+
+@past|1|Past simple vs past continuous|Quá khứ đơn và quá khứ tiếp diễn|Use the past simple for finished actions. Use the past continuous for a longer action in progress that was interrupted or set the scene.|s:I / He / She|aux:was|v:verb-ing||c:when|s:the phone|v:rang (past simple)|I [[cooked]] dinner when the phone rang.|I [[was cooking]] dinner when the phone rang.|The long background action takes -ing; the short action that interrupts it takes the past simple.|seg:-0.8:-0.3:was cooking;pt:-0.5:rang;pt:0:now
+I ___ dinner when the phone rang. | was cooking | cooked ;; am cooking ;; was cook | A longer action interrupted by a short one → past continuous.
+{P} ___ to London in 2019. | moved | was moving ;; moves ;; has moved | A finished time (2019) → past simple.
+While we ___ TV, the lights went out. | were watching | watched ;; was watching ;; are watching | "While" introduces the background action → past continuous. We → were.
+Yesterday I ___ my keys and couldn't get in. | lost | was losing ;; lose ;; have lost | One completed event yesterday → past simple.
+At 9 p.m. last night, they ___ for the exam. | were studying | studied ;; are studying ;; was studying | An action in progress at a moment in the past → past continuous.
+She ___ the door, turned on the light and sat down. | opened | was opening ;; opens ;; has opened | A sequence of completed actions → past simple.
+What ___ when I called you? | were you doing | you did ;; you were doing ;; was you doing | In progress at the moment of the call → past continuous. Question order: were + you + -ing.
+Jonathan ___ a letter when he heard a strange noise. | was writing | wrote ;; writes ;; is writing | The writing was interrupted by the noise → past continuous.
+{P} ___ the email an hour ago. | sent | was sending ;; has sent ;; sends | "Ago" → past simple.
+We didn't ___ the film very much. | enjoy | enjoyed ;; enjoying ;; enjoys | After "didn't", use the base verb.
+___ you see the match last night? | Did | Were ;; Do ;; Have | A past simple question uses did + base verb.
+He ___ his ankle while he was playing football. | broke | was breaking ;; breaks ;; has broken | The short completed event that interrupted → past simple.
+The doorbell rang while I ___ a shower. | was having | had ;; have ;; am having | The background action after "while" → past continuous.
+
+@pp|1|Present perfect vs past simple|Hiện tại hoàn thành và quá khứ đơn|Use the present perfect for experiences, unfinished periods and past actions with a result now. Use the past simple with a finished time (yesterday, in 2019, ago).|s:I / We / They|aux:have|v:past participle||s:He / She / It|aux:has|v:past participle|I [[have seen]] that film last night.|I [[saw]] that film last night.|If you can say WHEN it happened (a finished time), use the past simple.|seg:-0.9:0:life up to now;pt:0:now
+I ___ to Japan twice. | have been | went ;; was ;; have gone | A life experience with no time given → present perfect. "Been" = went and came back.
+{P} ___ in Hanoi since 2020. | has lived | lived ;; lives ;; is living | "Since" + still true now → present perfect.
+We ___ the project last Friday. | finished | have finished ;; finish ;; has finished | A finished time (last Friday) → past simple.
+Have you ever ___ sushi? | eaten | ate ;; eat ;; eating | The present perfect needs the past participle (eat → ate → eaten).
+I ___ my homework yet. | haven't finished | don't finish ;; hasn't finished ;; not finished | "Yet" usually goes with the present perfect.
+When ___ you start learning English? | did | have ;; do ;; has | "When" questions ask about a finished time → past simple.
+They ___ married for ten years now. | have been | were ;; are ;; has been | "For ... now" → an unfinished period → present perfect.
+I ___ that film last night. | saw | have seen ;; see ;; seen | "Last night" is a finished time → past simple.
+{P} has just ___ the report. | sent | send ;; sending ;; sended | After "has", use the past participle. "Send" is irregular: sent.
+This is the best book I ___ read. | have ever | was ever ;; did ever ;; has ever | Superlative + ever → present perfect.
+How long ___ you known each other? | have | did ;; do ;; are | "How long" + known → present perfect.
+Shakespeare ___ many famous plays. | wrote | has written ;; writes ;; was writing | He is dead, so the period is finished → past simple.
+I ___ three cups of coffee today, and it's only 10 a.m. | have had | had ;; have ;; has had | "Today" is not finished yet → present perfect.
+
+@future|1|Future forms|Các cách diễn đạt tương lai|Will: predictions, promises, instant decisions. Going to: plans and predictions from evidence. Present continuous: fixed arrangements. Present simple: timetables.|s:Subject|aux:will|v:base verb||s:Subject|aux:am/is/are going to|v:base verb|Look at those clouds! It [[will]] rain.|Look at those clouds! It [[is going to]] rain.|After time words like when, before, after and as soon as, use the present simple, not will.|pt:0:now;seg:0.2:0.9:future
+Look at those dark clouds! It ___ rain. | is going to | will be ;; is raining ;; rains | A prediction based on what you can see now → going to.
+I'm thirsty. — Wait here, I ___ get you some water. | will | am going ;; going to ;; am | A decision made at the moment of speaking → will.
+{P} ___ the dentist tomorrow at 10; it's in the calendar. | is seeing | sees ;; see ;; will seeing | A fixed arrangement → present continuous.
+We ___ a new house next year; we've already saved the money. | are going to buy | will buying ;; buy ;; buys | An intention already decided → going to.
+The film ___ at 8 p.m., so don't be late. | starts | is start ;; will starting ;; start | Timetables → present simple.
+I think robots ___ many jobs in the future. | will replace | are replacing ;; replace ;; replaced | An opinion-based prediction with "I think" → will.
+I promise I ___ tell anyone. | won't | am not going ;; don't ;; not will | A promise → will / won't.
+If it rains, we ___ at home. | will stay | would stay ;; stayed ;; staying | The result of a real future condition → will.
+___ you help me carry this box? | Will | Are ;; Do ;; Going | A request → Will you...?
+What ___ you going to do after graduation? | are | will ;; do ;; is | "Going to" needs am / is / are. You → are.
+She's pregnant. She ___ have a baby in May. | is going to | will be ;; has ;; is having to | A prediction from present evidence → going to.
+I'll call you when I ___ home. | get | will get ;; am getting ;; got | After "when" (future time clause), use the present simple.
+
+@sva|1|Subject–verb agreement|Sự hòa hợp chủ ngữ – động từ|A singular subject takes a singular verb (works, is, has); a plural subject takes a plural verb (work, are, have). Find the real subject first.|s:He / She / It / This one|v:verb + s||s:They / People / My parents|v:verb (no s)|This one [[look]] good. It [[work]] now.|This one [[looks]] good. It [[works]] now.|This is one of your most repeated mistakes: it work → it works, this one look → this one looks.|
+The list of names ___ on the desk. | is | are ;; be ;; were being | The subject is "list" (singular), not "names".
+Everyone in my class ___ a laptop. | has | have ;; having ;; are having | "Everyone" is grammatically singular.
+My parents ___ in Can Tho. | live | lives ;; living ;; is living | "My parents" is plural → live.
+This one ___ good to me. | looks | look ;; looking ;; are looking | "This one" is singular → looks.
+The software that we use ___ updated every week. | is | are ;; be ;; were | "Software" is uncountable, so it takes a singular verb.
+Neither the teacher nor the students ___ ready. | were | was ;; is ;; be | With neither...nor, the verb agrees with the nearer subject (students → were).
+The news ___ surprising. | was | were ;; are ;; have been | "News" is uncountable and singular.
+Each of the students ___ a different topic. | chooses | choose ;; are choosing ;; have chosen | "Each of" → singular verb.
+It ___ when I press the button. | works | work ;; working ;; are working | "It" → verb + s.
+Mathematics ___ my favourite subject. | is | are ;; were ;; be | School subjects ending in -s are singular.
+The people in this city ___ very friendly. | are | is ;; was ;; be | "People" is plural.
+A number of students ___ absent today. | are | is ;; was ;; has been | "A number of" + plural noun → plural verb.
+{P} ___ to music while studying. | listens | listen ;; listening ;; are listening | One person → listens.
+
+@qform|1|Making questions|Cách đặt câu hỏi|Most questions need a helper verb before the subject: question word + do/does/did/is/are/have/can + subject + verb. Subject questions (Who called?) don't use do.|x:Wh-word|aux:do / does / is / can|s:subject|v:main verb|o:...?|[[How to]] change the language?|[[How do I]] change the language?|"How to...?" is not a full question. Say "How do I...?" or "How can I...?"|
+How ___ switch between languages on my keyboard? | do I | I ;; to ;; I do | A full question: How + do + I + verb.
+Why ___ locked behind a login wall? | is it | it is ;; it ;; does it | With "be", put is before the subject.
+What ___ the main uses of this skill? | are | is ;; do ;; be | "Uses" is plural → are.
+Where ___ {P} live? | does | do ;; is ;; are | One person + present simple → does.
+___ you finished your homework? | Have | Did ;; Are ;; Has | "Finished" is a past participle here → have.
+What time ___ the shop open? | does | do ;; is ;; are | "The shop" is singular → does.
+Why ___ the video appear in the background? | does | do ;; is ;; are | Present simple question with a singular subject → does + base verb.
+Who ___ this message? | wrote | did write ;; did wrote ;; was write | "Who" is the subject here, so no did: Who wrote...?
+Can you tell me where ___? | the station is | is the station ;; does the station ;; the station does | Indirect questions use normal word order: subject + verb.
+How long ___ it take to get there? | does | is ;; do ;; has | "Take" is the main verb → does it take.
+___ she like Korean food? | Does | Is ;; Do ;; Has | She + present simple question → does.
+What ___ you doing when I called? | were | did ;; was ;; are | Past continuous question → were + you + -ing.
+How much ___ the course cost? | does | is ;; do ;; costs | "Cost" is the main verb → does it cost.
+
+@neg|1|Negatives|Câu phủ định|Make negatives with a helper verb + not: don't/doesn't/didn't + base verb, isn't/aren't, haven't/hasn't. Use only one negative word per idea.|s:Subject|aux:don't / doesn't / didn't|v:base verb||s:Subject|aux:isn't / aren't / hasn't|v:-ing / participle|It still [[not load]].|It still [[doesn't load]].|Never put "not" straight before a main verb in the present or past simple.|
+She ___ like spicy food. | doesn't | don't ;; isn't ;; not | She + present simple negative → doesn't + base verb.
+I ___ have any classes today. | don't | haven't ;; am not ;; not | "Have" as a main verb → don't have.
+{P} ___ finished the report yet. | hasn't | didn't ;; doesn't ;; isn't | "Finished" is a participle + yet → hasn't.
+We ___ going to the party tonight. | aren't | don't ;; doesn't ;; not | "Going" needs be → aren't.
+He ___ come to class yesterday. | didn't | doesn't ;; wasn't ;; hasn't | Past simple negative → didn't + base verb.
+There ___ any milk left. | isn't | aren't ;; don't ;; haven't | "Milk" is uncountable → isn't.
+I have ___ idea what you mean. | no | not ;; any ;; none | "Have no idea" is the fixed phrase.
+You ___ smoke here. It's forbidden. | mustn't | don't have to ;; needn't ;; haven't | Prohibition → mustn't.
+They ___ seen the new film. | haven't | didn't ;; don't ;; aren't | "Seen" is a participle → haven't.
+It still ___ load. | doesn't | don't ;; isn't ;; not | "It" + present simple negative → doesn't + base verb.
+I can't find my keys ___. | anywhere | nowhere ;; somewhere ;; everywhere | "Can't" is already negative, so use "anywhere", not "nowhere".
+She has ___ been abroad. | never | not never ;; ever ;; no | "Never" is negative by itself; don't add another negative.
+
+@art|1|Articles: a, an, the, no article|Mạo từ a, an, the, không mạo từ|Use a/an for one thing mentioned for the first time (an before a vowel SOUND). Use the for something specific or unique. Use no article for general plural or uncountable ideas.|c:a / an|o:one of many||c:the|o:the specific one||c:∅|o:in general|I want to do [[an]] master's degree.|I want to do [[a]] master's degree.|It's the SOUND that matters: a university (/juː/), an hour (silent h).|
+I want to do ___ master's degree in Europe. | a | an ;; ~the ;; ∅ (no article) | "Master's" starts with a consonant sound /m/ → a.
+She is ___ honest person. | an | a ;; ~the ;; ∅ (no article) | "Honest" starts with a vowel sound (the h is silent) → an.
+___ sun rises in the east. | The | A ;; An ;; ∅ (no article) | Unique things → the.
+He is ___ university student. | a | an ;; ~the ;; ∅ (no article) | "University" starts with the sound /j/ → a.
+___ life is short. | ∅ (no article) | The ;; A ;; An | Abstract nouns used in general → no article.
+I bought a laptop yesterday. ___ laptop is very fast. | The | ~A ;; An ;; ∅ (no article) | Second mention of the same thing → the.
+She plays ___ piano beautifully. | the | ~a ;; an ;; ∅ (no article) | Playing a musical instrument → the.
+We had ___ lunch at noon. | ∅ (no article) | ~a ;; ~the ;; an | Meals normally take no article.
+It was ___ amazing experience. | an | a ;; ~the ;; ∅ (no article) | "Amazing" starts with a vowel sound → an.
+{P} is ___ best student in the class. | the | a ;; an ;; ∅ (no article) | Superlatives take the.
+___ Mekong River flows through six countries. | The | A ;; ∅ (no article) ;; An | Names of rivers take the.
+He works as ___ engineer. | an | a ;; ~the ;; ∅ (no article) | Jobs take a/an. "Engineer" starts with a vowel sound.
+___ Vietnam is in Southeast Asia. | ∅ (no article) | The ;; A ;; An | Most country names take no article.
+
+@count|1|Countable, uncountable and quantifiers|Danh từ đếm được, không đếm được và từ chỉ lượng|Countable nouns have plurals and use many / few / a few. Uncountable nouns have no plural and use much / little / a little. Some, any and a lot of work with both.|c:many / few / a few|o:plural countable||c:much / little / a little|o:uncountable|Find me some project [[idea]].|Find me some project [[ideas]].|After "some", a countable noun must be plural.|
+I need some ___ about the course. | information | informations ;; an information ;; information's | "Information" is uncountable: no -s and no "an".
+How ___ money do you have? | much | many ;; lot ;; few | "Money" is uncountable → much.
+There are ___ people here today. | a lot of | much ;; a little ;; an amount of | "People" is countable plural → a lot of / many.
+Find me some hackathon project ___. | ideas | idea ;; an idea ;; ideaes | After "some", a countable noun is plural.
+She gave me a useful piece of ___. | advice | advices ;; an advice ;; advise | "Advice" is uncountable; "advise" is the verb.
+We have very ___ time left, so hurry. | little | few ;; many ;; a few | "Time" is uncountable; "very little" = almost none.
+There were only a ___ students in the room. | few | little ;; much ;; less | "Students" is countable → a few.
+I don't have ___ friends in this city. | many | much ;; a little ;; a lot | "Friends" is countable plural → many.
+There is ___ traffic in Ho Chi Minh City. | a lot of | many ;; a few ;; several | "Traffic" is uncountable → a lot of / much.
+There were ___ cars on the road than yesterday. | fewer | less ;; little ;; few | Countable plural comparative → fewer.
+I'd like ___ water, please. | some | ~a ;; an ;; many | "Water" is uncountable → some.
+All the ___ in this room is new. | furniture | furnitures ;; furniture's ;; a furniture | "Furniture" is uncountable.
+
+@plural|1|Irregular plurals|Danh từ số nhiều bất quy tắc|Most nouns add -s or -es, but many common and academic nouns are irregular.|o:vertex|x:→|o:vertices||o:criterion|x:→|o:criteria||o:child|x:→|o:children|all the [[vertex]]|all the [[vertices]]|Academic words from Latin and Greek often change their ending: analysis → analyses, phenomenon → phenomena.|
+There are three ___ in this graph. | vertices | vertex ;; vertexes ;; vertice | Vertex → vertices (Latin plural).
+Many ___ were waiting at the bus stop. | people | peoples ;; person ;; peopled | Person → people.
+The ___ are playing in the park. | children | childs ;; childrens ;; child | Child → children.
+I have two ___ in my bag. | knives | knifes ;; knive ;; knifes' | Knife → knives (f → ves).
+The research has several ___. | criteria | criterias ;; criterion ;; criterions | Criterion → criteria.
+These ___ show clear results. | analyses | analysis ;; analysises ;; analysis' | Analysis → analyses.
+She bought five ___. | tomatoes | tomatos ;; tomato ;; tomatoe | Tomato → tomatoes.
+Two ___ crossed the road. | women | womans ;; woman ;; womens | Woman → women.
+My ___ hurt after the long walk. | feet | foots ;; feets ;; footes | Foot → feet.
+There are many old ___ in the town. | churches | churchs ;; church ;; churchies | Nouns ending in -ch add -es.
+The ___ were full of books. | shelves | shelfs ;; shelve ;; shelfes | Shelf → shelves.
+I saw three ___ in the field. | sheep | sheeps ;; sheepes ;; a sheep | "Sheep" has the same singular and plural form.
+Scientists observed several strange ___. | phenomena | phenomenons ;; phenomenas ;; phenomenon | Phenomenon → phenomena.
+
+@pron|1|Pronouns and possessives|Đại từ và sở hữu|its = belonging to it; it's = it is. whose = belonging to whom. Reflexives: myself, yourself, himself, herself, itself, ourselves, yourselves, themselves.|s:it's|x:=|o:it is||s:its|x:=|o:belonging to it||s:whose|x:=|o:belonging to whom|We built it [[ourself]].|We built it [[ourselves]].|Possessives never take an apostrophe: its, yours, hers, theirs.|
+The company changed ___ logo. | its | it's ;; it is ;; their's | "Its" (no apostrophe) = belonging to it.
+___ going to rain later. | It's | Its ;; It ;; Its' | "It's" = it is.
+Someone ___ only job is welding doesn't need that. | whose | who's ;; that their ;; which | "Whose" shows possession for people.
+My friend and ___ went to the cinema. | I | me ;; myself ;; mine | It's the subject position → I.
+This book is ___. | mine | my ;; me ;; mine's | Possessive pronoun standing alone → mine.
+They did the whole project by ___. | themselves | theirselves ;; themself ;; themselfs | Reflexive of they → themselves.
+We built the website ___. | ourselves | ourself ;; us ;; ourselfs | Reflexive of we → ourselves.
+Is this ___ bag or mine? | your | yours ;; you're ;; you | Before a noun → your.
+___ the best student in our class. | You're | Your ;; Yours ;; You | "You're" = you are.
+Between you and ___, I think he's wrong. | me | I ;; myself ;; mine | After a preposition → object pronoun me.
+The students handed in ___ essays. | their | there ;; they're ;; them | Possessive → their.
+Whose phone is this? Is it ___? | hers | her's ;; hers' ;; she | Possessive pronoun standing alone → hers (no apostrophe).
+
+@prep-tp|1|Prepositions of time and place|Giới từ chỉ thời gian và nơi chốn|in: months, years, cities, countries. on: days, dates, surfaces. at: clock times, night, exact points. since: a starting point. for: a length of time.|c:at|o:7 p.m. / the station||c:on|o:Monday / 28 August||c:in|o:2007 / Hanoi|Output the files [[at]] Documents.|Output the files [[to]] Documents.|At → in → on goes from small point to bigger area/time, but dates and days always take on.|
+I was born ___ 2007. | in | on ;; at ;; since | Years take in.
+The meeting is ___ Monday. | on | in ;; at ;; by | Days take on.
+Let's meet ___ 7 p.m. | at | in ;; on ;; for | Clock times take at.
+She lives ___ Ho Chi Minh City. | in | at ;; on ;; to | Cities take in.
+We usually go out ___ night. | at | in ;; on ;; by | "At night" is fixed.
+He has worked here ___ 2020. | since | for ;; from ;; in | A starting point with the present perfect → since.
+I've been waiting ___ two hours. | for | since ;; during ;; from | A length of time → for.
+Put the files ___ the Documents folder. | in | at ;; on ;; to | Inside a folder → in.
+The bus stop is ___ the end of the street. | at | in ;; on ;; to | A point → at the end.
+My birthday is ___ 28 August. | on | in ;; at ;; by | Dates take on.
+We arrived ___ the airport late. | at | in ;; to ;; on | "Arrive at" a building or point.
+___ the morning, I go running. | In | On ;; At ;; By | Parts of the day take in (but at night).
+
+@comp|1|Comparatives and superlatives|So sánh hơn và so sánh nhất|Short adjectives: -er / the -est. Long adjectives: more / the most. Irregular: good → better → best, bad → worse → worst.|o:fast|x:→|o:faster than|x:→|o:the fastest||o:interesting|x:→|o:more interesting|x:→|o:the most interesting|This one is [[more faster]].|This one is [[faster]].|Never use more with an -er form.|
+This laptop is ___ than my old one. | faster | more fast ;; fastest ;; more faster | Short adjective → -er.
+It's the ___ book I've ever read. | most interesting | more interesting ;; interestingest ;; most interested | Long adjective superlative → the most.
+Today is ___ than yesterday. | hotter | more hot ;; hoter ;; hottest | Hot → hotter (double the t).
+She is ___ student in the class. | the best | the better ;; the goodest ;; best | Good → better → the best.
+This exam was ___ than I expected. | easier | more easy ;; easyer ;; easiest | Easy → easier (y → ier).
+My English is getting ___. | better and better | more and more good ;; gooder and gooder ;; best and best | Repeating the comparative shows a continuing change.
+The second test was ___ difficult than the first. | less | fewer ;; lesser ;; least | The opposite of more + adjective → less.
+He is not as tall ___ his brother. | as | than ;; like ;; so | as ... as.
+The ___ you practise, the better you get. | more | most ;; much ;; many | the + comparative, the + comparative.
+This is ___ worst film I've seen. | the | a ;; more ;; most | Superlatives take the.
+Her score was much ___ than mine. | higher | more high ;; highest ;; more higher | High → higher.
+This route is ___ than the other one. | shorter | more short ;; shortest ;; more shorter | Short → shorter.
+
+@modal|1|Modal verbs: ability, obligation, advice|Động từ khuyết thiếu: khả năng, bắt buộc, lời khuyên|Modals are followed by the base verb with no "to" and never take -s: can, could, must, should, may, might. "Have to" and "need to" do take "to".|s:Subject|aux:can / must / should|v:base verb||s:Subject|aux:has to / need to|v:base verb|She [[cans]] swim. You [[should to]] go.|She [[can]] swim. You [[should]] go.|mustn't = it's forbidden; don't have to = it's not necessary.|
+You ___ wear a seatbelt. It's the law. | must | can ;; might ;; would | A rule or law → must.
+You ___ see a doctor about that cough. | should | must to ;; can to ;; should to | Advice → should + base verb (no "to").
+___ I open the window? | Can | Must to ;; Do ;; Am | Asking permission → Can I...?
+She ___ speak three languages. | can | cans ;; can to ;; is can | Modals never take -s or "to".
+You ___ to finish it today; tomorrow is fine. | don't have | mustn't ;; shouldn't ;; can't | Not necessary → don't have to.
+We ___ leave now or we'll miss the bus. | must | can ;; may ;; would | A strong necessity → must.
+___ you help me with this, please? | Could | Should ;; Must ;; Might | A polite request → Could you...?
+You ___ park here. It's not allowed. | can't | don't have to ;; needn't ;; mustn't to | Not allowed → can't / mustn't.
+I ___ swim when I was five. | could | can ;; could to ;; was can | Past ability → could.
+Students ___ bring a calculator to the exam if they want. | may | ~must ;; have ;; should to | Permission → may.
+You ___ to study harder if you want band 7. | need | must ;; should ;; can | "Need to" takes "to"; must/should/can don't.
+He ___ to wear a uniform at work. | has | must ;; should ;; have | One person + "to" → has to.
+
+@ger-inf|1|Gerund or infinitive|Danh động từ hay động từ nguyên mẫu|After prepositions and some verbs (enjoy, mind, avoid, keep, how about), use -ing. After other verbs (want, decide, promise, hope), use to + verb.|c:how about / without / keep / enjoy|v:verb-ing||c:want / decide / promise|v:to + verb|How about [[remove]] them? It keeps [[add]] a line.|How about [[removing]] them? It keeps [[adding]] a line.|"Looking forward to" and "interested in" end in a preposition, so they take -ing.|
+How about ___ all of them? | removing | remove ;; to remove ;; removed | "How about" + -ing.
+I can't do it without ___ F12. | opening | open ;; to open ;; opened | After a preposition (without) → -ing.
+It keeps ___ a new line. | adding | add ;; to add ;; added | keep + -ing.
+I decided ___ abroad for my master's. | to study | studying ;; study ;; studied | decide + to + verb.
+She enjoys ___ novels. | reading | to read ;; read ;; reads | enjoy + -ing.
+I'm looking forward to ___ you. | seeing | see ;; saw ;; be seeing | "To" is a preposition here → -ing.
+He promised ___ me back. | to call | calling ;; call ;; called | promise + to + verb.
+Would you mind ___ the door? | closing | to close ;; close ;; closed | mind + -ing.
+I want ___ a simple LLM. | to make | making ;; make ;; made | want + to + verb.
+They avoided ___ about the problem. | talking | to talk ;; talk ;; talked | avoid + -ing.
+It's worth ___ the extra money. | paying | to pay ;; pay ;; paid | "It's worth" + -ing.
+I'm interested in ___ AI security. | learning | to learn ;; learn ;; learned | After a preposition (in) → -ing.
+Can it be used ___ a character? | to animate | to animated ;; animating ;; animate | to + base verb (never to + past form).
+
+@punct|1|Capitals and basic punctuation|Viết hoa và dấu câu cơ bản|Capitalise I, the first word of a sentence, names, languages, nationalities, days, months and brands. Put no space before ? or !. End every sentence with a full stop, question mark or exclamation mark.|o:i|x:→|o:I||o:now ?|x:→|o:now?||o:english|x:→|o:English|[[what]] should [[i]] do now [[?]]|[[What]] should [[I]] do now[[?]]|In English the question mark touches the last word, with no space.|
+___ | I think I'm right. | i think i'm right. ;; I think im right. ;; i think I'm right. | "I" is always a capital, and "I'm" needs an apostrophe.
+What should I do ___ | now? | now ? ;; now?. ;; now. | No space before "?", and a question ends with "?" only.
+We speak ___ at home. | Vietnamese | vietnamese ;; VietNamese ;; vietNamese | Languages are capitalised.
+I live in ___. | Ho Chi Minh City | ho chi minh city ;; Ho chi minh city ;; ho Chi Minh city | Every word in a place name is capitalised.
+___ is my favourite month. | December | december ;; DECEMBER ;; december's | Months are capitalised.
+___ | I'm tired, so I'm going to bed. | I'm tired, I'm going to bed. ;; I'm tired so, I'm going to bed. ;; im tired, so im going to bed. | Join two sentences with a comma + linking word (so), not a comma alone.
+The shop sells three things___ books, pens and paper. | : | ; ;; , ;; . | A colon introduces a list.
+___, can you help me? | Okay | okay ;; OKay ;; Okey | Capitalise the first word; the spelling is "okay".
+She asked, ___ | "Are you coming?" | "are you coming?" ;; "Are you coming"? ;; Are you coming? | The quotation starts with a capital, and the "?" goes inside the quotation marks.
+My favourite apps are ___. | Reddit, GitHub and Zalo | reddit, github and zalo ;; Reddit GitHub and Zalo ;; Reddit, Github, and, Zalo | Brand names keep their capitals; separate list items with commas.
+Do you use ___ or Linux? | Windows | windows ;; window ;; Window | The operating system's name is "Windows" with a capital W and an s.
+I study IT at ___. | PTIT | ptit ;; Ptit ;; pTIT | Acronyms are written in capitals.
+I love ___ mornings. | Sunday | sunday ;; SUNDAY ;; sunday's | Days of the week are capitalised.
