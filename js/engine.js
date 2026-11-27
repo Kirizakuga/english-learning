@@ -302,6 +302,22 @@
     return response === view.answer;
   }
 
+  // Word box for a typed question: the words of the matching gap-fill question's
+  // options, sorted so their order gives nothing away. The learner still has to
+  // pick the right form and put the words in order.
+  function typeHint(q, bank) {
+    if (q.kind !== 'type') return [];
+    var sib = (bank.byFrame[q.frame] || []).filter(function (x) { return x.kind === 'choose' && x.prompt === q.prompt; })[0];
+    var opts = sib ? sib.options : [q.answer];
+    var words = {};
+    opts.forEach(function (o) {
+      if (isEmpty(o)) return;
+      o.split(/\s+/).forEach(function (w) { if (w) words[w] = 1; });
+    });
+    String(q.answer).split(/\s+/).forEach(function (w) { if (w) words[w] = 1; });
+    return Object.keys(words).sort(function (a, b) { return a.toLowerCase().localeCompare(b.toLowerCase()); });
+  }
+
   // The full correct sentence, for feedback.
   function correctSentence(q) {
     if (q.kind === 'judge') return q.fixed || q.prompt;
@@ -610,7 +626,7 @@
     createBank: createBank, emptyState: emptyState, normaliseState: normaliseState,
     topicStats: topicStats, acc20: acc20, kindsNeeded: kindsNeeded, rawLevel: rawLevel, levelOf: levelOf, masteryProgress: masteryProgress,
     record: record, reviewList: reviewList, weakest: weakest, streak: streak, dayKey: dayKey,
-    normaliseAnswer: normaliseAnswer, present: present, grade: grade, correctSentence: correctSentence,
+    normaliseAnswer: normaliseAnswer, typeHint: typeHint, present: present, grade: grade, correctSentence: correctSentence,
     Session: Session, mulberry32: mulberry32,
     mergeStates: mergeStates, packSeen: packSeen, unpackSeen: unpackSeen, toRemote: toRemote, fromRemote: fromRemote
   };

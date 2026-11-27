@@ -432,6 +432,12 @@
       promptHtml(q, done && !wholeSentence && (q.kind === 'choose' || q.kind === 'type') ? correctAns : undefined) + '</p>';
 
     if (q.kind === 'type') {
+      if (!done) {
+        html += '<div class="wordbox"><span id="wordbox-label">Build your answer from these words. You won’t need all of them.</span><div class="words" role="group" aria-labelledby="wordbox-label">' +
+          E.typeHint(q, bank).map(function (w) {
+            return '<button type="button" class="word" data-word="' + esc(w) + '">' + esc(w) + '</button>';
+          }).join('') + '</div></div>';
+      }
       html += '<form class="typed" data-form="type" autocomplete="off"><label for="typed-input" class="sr-only">Your answer</label>' +
         '<input id="typed-input" type="text" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="done"' +
         (done ? ' disabled value="' + esc(res.response) + '" class="' + (res.correct ? 'is-right' : 'is-wrong') + '"' : '') + '>' +
@@ -480,6 +486,15 @@
     }
     if (explain) html += '<p class="explain">' + esc(explain) + '</p>';
     return html;
+  }
+
+  // Tapping a word in the word box adds it to the typed answer.
+  function addWord(w) {
+    var input = document.getElementById('typed-input');
+    if (!input || input.disabled) return;
+    var v = input.value.replace(/\s+$/, '');
+    input.value = (v ? v + ' ' : '') + w + ' ';
+    input.focus();
   }
 
   function submitAnswer(response) {
@@ -567,8 +582,9 @@
 
   /* ---------- events ---------- */
   app.addEventListener('click', function (e) {
-    var el = e.target.closest('[data-act], [data-opt]');
+    var el = e.target.closest('[data-act], [data-opt], [data-word]');
     if (!el) return;
+    if (el.hasAttribute('data-word')) { addWord(el.getAttribute('data-word')); return; }
     if (el.hasAttribute('data-opt')) { submitAnswer(Number(el.getAttribute('data-opt'))); return; }
     var act = el.getAttribute('data-act');
     if (act === 'theme') toggleTheme();
