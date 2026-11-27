@@ -335,6 +335,8 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 
 .foot { margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 6px 20px; justify-content: space-between; color: var(--faint); font-size: .8125rem; }
 .foot button { font: inherit; color: var(--muted); background: none; border: 0; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; min-height: 44px; padding: 0; }
+#sync-status[data-state="synced"]::before, #sync-status[data-state="saving"]::before { content: ""; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--ok); margin-right: 8px; vertical-align: middle; }
+#sync-status[data-state="unreachable"], #sync-status[data-state="error"] { color: var(--bad); }
 .confirm { display: inline-flex; gap: 10px; align-items: center; flex-wrap: wrap; }
 
 @media (prefers-reduced-motion: reduce) {
@@ -347,6 +349,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 <div id="announcer" class="sr-only" aria-live="polite"></div>
 <script src="js/engine.js"></script>
 <script src="js/store.js"></script>
+<script src="js/sync.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

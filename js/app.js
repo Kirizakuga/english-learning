@@ -36,7 +36,30 @@
     return { band: p[0], name: p[1] || '' };
   }
   function announce(msg) { announcer.textContent = ''; setTimeout(function () { announcer.textContent = msg; }, 30); }
-  function save() { Store.save(state); }
+  function save() { Store.save(state); Sync.changed(); }
+
+  // Another device's progress arrived: merge it into the live state object
+  // (the running session keeps its reference) and refresh calm screens.
+  function applyMerged(merged) {
+    var prefs = state.prefs;
+    Object.keys(state).forEach(function (k) { delete state[k]; });
+    Object.assign(state, merged, { prefs: prefs || {} });
+    Store.save(state);
+    if (!session && location.hash !== '#results') route();
+  }
+
+  function syncText(s) {
+    if (s === 'connecting') return 'Connecting to sync…';
+    if (s === 'saving') return 'Saving to your account…';
+    if (s === 'synced') return 'Progress syncs across your devices.';
+    if (s === 'unreachable') return 'Sync can’t be reached right now. Progress is saved here and syncs when it’s back.';
+    if (s === 'error') return 'Sync stopped working. Progress is saved on this device.';
+    return Store.available ? 'Progress is saved on this device only.' : 'Progress can’t be saved in this browser. It resets when you close the page.';
+  }
+  Sync.onStatus(function (s) {
+    var el = document.getElementById('sync-status');
+    if (el) { el.textContent = syncText(s); el.setAttribute('data-state', s); }
+  });
 
   /* ---------- theme ---------- */
   function applyTheme(t) {
@@ -83,6 +106,7 @@
       bank = E.createBank(res[0], res[1]);
       state = E.normaliseState(Store.load());
       route();
+      Sync.start({ bank: bank, getState: function () { return state; }, apply: applyMerged });
     }).catch(renderError);
   }
 
@@ -187,7 +211,7 @@
     });
 
     html += '<footer class="foot"><span>' + bank.questions.length.toLocaleString('en') + ' questions · 44 topics</span>' +
-      (Store.available ? '<span>Progress is saved on this device.</span>' : '<span>Progress can’t be saved in this browser. It will reset when you close the page.</span>') +
+      '<span id="sync-status" data-state="' + Sync.status + '">' + syncText(Sync.status) + '</span>' +
       '<span class="confirm" id="reset-zone"><button data-act="reset-ask">Reset progress</button></span></footer>';
     app.innerHTML = html;
   }
@@ -565,9 +589,16 @@
       go('practice');
     }
     else if (act === 'reset-ask') {
-      document.getElementById('reset-zone').innerHTML = 'Delete all progress? <button data-act="reset-yes">Yes, delete it</button> <button data-act="reset-no">Keep it</button>';
+      document.getElementById('reset-zone').innerHTML = (Sync.status === 'off' ? 'Delete all progress?' : 'Delete all progress on every device?') + ' <button data-act="reset-yes">Yes, delete it</button> <button data-act="reset-no">Keep it</button>';
     }
-    else if (act === 'reset-yes') { Store.reset(); state = E.emptyState(); renderMap(); }
+    else if (act === 'reset-yes') {
+      Store.reset();
+      state = E.emptyState();
+      state.resetAt = Date.now();
+      Store.save(state);
+      Sync.flush();
+      renderMap();
+    }
     else if (act === 'reset-no') renderMap();
   });
 

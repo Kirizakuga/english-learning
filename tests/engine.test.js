@@ -174,4 +174,44 @@ test('weakest topics start with the priority list', () => {
   assert.deepStrictEqual(w, ['qform', 'sva', 'splice']);
 });
 
+test('sync merge: newer topic wins, reviews and seen combine, reset sticks', () => {
+  const day0 = Date.UTC(2026, 0, 10);
+  const laptop = E.emptyState(), phone = E.emptyState();
+  const art = bank.byTopic.art, sva = bank.byTopic.sva;
+  E.record(laptop, art[0], false, day0, false);          // laptop: art, wrong
+  E.record(phone, sva[0], true, day0 + 1000, false);     // phone: sva
+  E.record(phone, art[1], true, day0 + 2000, false);     // phone: art, later
+  const m = E.mergeStates(laptop, phone, day0 + 3000);
+  assert.strictEqual(m.topics.art.answered, 1, 'newer art stats should win');
+  assert.strictEqual(m.topics.art.correct, 1);
+  assert(m.topics.sva, 'sva from phone missing');
+  assert(m.review[art[0].frame], 'laptop review entry lost');
+  assert(m.seen[art[0].id] && m.seen[art[1].id] && m.seen[sva[0].id], 'seen not combined');
+  assert.strictEqual(m.answered, 2);
+  // Clearing a review on one device is not undone by the other device's older copy.
+  const cleared = JSON.parse(JSON.stringify(m));
+  E.record(cleared, art[2], true, day0 + 5000, true);
+  E.record(cleared, art[3], true, day0 + 6000, true);
+  assert(!cleared.review[art[0].frame]);
+  assert(!E.mergeStates(cleared, laptop, day0 + 7000).review[art[0].frame], 'cleared review came back');
+  // Reset on one device wins over older data elsewhere.
+  const reset = E.emptyState(); reset.resetAt = day0 + 8000;
+  const r = E.mergeStates(reset, m, day0 + 9000);
+  assert.strictEqual(Object.keys(r.topics).length, 0, 'reset was undone');
+  assert.strictEqual(Object.keys(r.seen).length, 0);
+});
+
+test('sync document round-trips and stays small', () => {
+  const rng = E.mulberry32(9), clock = fakeClock(Date.UTC(2026, 0, 10), 8000), state = E.emptyState();
+  const s = new E.Session(bank, state, { mode: 'mixed', count: 400, clock, rng });
+  run(s, 400, clock, rng, 0.7);
+  bank.questions.forEach((q, i) => { if (i % 2) state.seen[q.id] = 1; });   // half the bank seen
+  const doc = E.toRemote(state, bank);
+  const size = JSON.stringify(doc).length;
+  assert(size < 60000, 'sync document too big: ' + size);
+  const back = E.fromRemote(JSON.parse(JSON.stringify(doc)), bank);
+  assert.deepStrictEqual(Object.keys(back.seen).sort(), Object.keys(state.seen).sort());
+  assert.deepStrictEqual(back.topics, state.topics);
+});
+
 console.log(`\n${passed} passed`);

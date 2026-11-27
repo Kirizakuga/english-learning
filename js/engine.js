@@ -42,7 +42,7 @@
   /* ---------- progress state ---------- */
 
   function emptyState() {
-    return { v: 1, updatedAt: 0, topics: {}, review: {}, seen: {}, days: [], answered: 0, prefs: {} };
+    return { v: 1, updatedAt: 0, resetAt: 0, topics: {}, review: {}, reviewDone: {}, seen: {}, days: [], answered: 0, prefs: {} };
   }
 
   function normaliseState(s) {
@@ -113,6 +113,7 @@
     var t = topicStats(state, q.topic);
     var before = t.level;
     t.answered++;
+    t.at = now;
     state.answered = (state.answered || 0) + 1;
     if (correct) { t.correct++; t.kinds[q.kind] = (t.kinds[q.kind] || 0) + 1; }
     t.last.push(correct ? 1 : 0);
@@ -125,11 +126,11 @@
     // spaced review, one entry per frame (§5.4)
     var r = state.review[q.frame];
     if (!correct) {
-      state.review[q.frame] = { frame: q.frame, topic: q.topic, kind: q.kind, id: q.id, step: 0, ok: 0, due: now + DAY };
+      state.review[q.frame] = { frame: q.frame, topic: q.topic, kind: q.kind, id: q.id, step: 0, ok: 0, due: now + DAY, at: now };
     } else if (r && isReview) {
       r.ok++;
-      if (r.ok >= 2) delete state.review[q.frame];
-      else { r.step = Math.min(r.step + 1, REVIEW_DAYS.length - 1); r.due = now + REVIEW_DAYS[r.step] * DAY; r.kind = q.kind; r.id = q.id; }
+      if (r.ok >= 2) { delete state.review[q.frame]; state.reviewDone[q.frame] = now; }
+      else { r.step = Math.min(r.step + 1, REVIEW_DAYS.length - 1); r.due = now + REVIEW_DAYS[r.step] * DAY; r.kind = q.kind; r.id = q.id; r.at = now; }
     }
 
     state.seen[q.id] = 1;
@@ -165,6 +166,106 @@
       if (levelOf(state, id) === 0 && !out.some(function (o) { return o.id === id; })) out.push({ id: id, score: 1, why: 'new' });
     }
     return out;
+  }
+
+  /* ---------- sync: merge two copies of progress (§8) ----------
+   * Devices merge instead of overwriting each other:
+   * - topic stats: the copy practised more recently wins, per topic
+   * - review queue: newest entry per frame; a frame cleared later stays cleared
+   * - seen questions and study days: union
+   * - a reset on one device discards everything older than the reset */
+  function mergeStates(a, b, now) {
+    a = normaliseState(a); b = normaliseState(b);
+    var resetAt = Math.max(a.resetAt || 0, b.resetAt || 0);
+    var out = emptyState();
+    out.resetAt = resetAt;
+    out.updatedAt = Math.max(a.updatedAt || 0, b.updatedAt || 0);
+    out.prefs = a.prefs || {};
+    function live(x) { return (x && (x.at || 0)) > resetAt; }
+
+    [a, b].forEach(function (s) {
+      Object.keys(s.topics).forEach(function (id) {
+        var t = s.topics[id];
+        if (resetAt && !live(t)) return;
+        var cur = out.topics[id];
+        if (!cur || (t.at || 0) > (cur.at || 0) || ((t.at || 0) === (cur.at || 0) && t.answered > cur.answered)) out.topics[id] = t;
+      });
+      Object.keys(s.reviewDone).forEach(function (f) {
+        if (s.reviewDone[f] > resetAt) out.reviewDone[f] = Math.max(out.reviewDone[f] || 0, s.reviewDone[f]);
+      });
+    });
+    [a, b].forEach(function (s) {
+      Object.keys(s.review).forEach(function (f) {
+        var r = s.review[f];
+        if (resetAt && !live(r)) return;
+        if ((out.reviewDone[f] || 0) >= (r.at || 0)) return;
+        if (!out.review[f] || (r.at || 0) > (out.review[f].at || 0)) out.review[f] = r;
+      });
+    });
+    // Seen ids and days carry no timestamps: after a reset keep only the side that reset.
+    var sides = [a, b].filter(function (s) { return !resetAt || (s.resetAt || 0) === resetAt; });
+    var days = {};
+    sides.forEach(function (s) {
+      Object.keys(s.seen).forEach(function (id) { out.seen[id] = 1; });
+      s.days.forEach(function (d) { days[d] = 1; });
+    });
+    out.days = Object.keys(days).sort().slice(-400);
+    var cutoff = (now || Date.now()) - 60 * DAY;
+    Object.keys(out.reviewDone).forEach(function (f) { if (out.reviewDone[f] < cutoff) delete out.reviewDone[f]; });
+    out.answered = Object.keys(out.topics).reduce(function (n, id) { return n + (out.topics[id].answered || 0); }, 0);
+    return out;
+  }
+
+  // Seen ids as one bitset per topic, in bank order (stable while new questions are appended per topic).
+  function packSeen(seen, bank) {
+    var out = {};
+    bank.topics.forEach(function (t) {
+      var list = bank.byTopic[t.id] || [], bytes = new Array(Math.ceil(list.length / 8)).fill(0), any = false;
+      list.forEach(function (q, i) { if (seen[q.id]) { bytes[i >> 3] |= 1 << (i & 7); any = true; } });
+      if (any) out[t.id] = toBase64(bytes);
+    });
+    return out;
+  }
+  function unpackSeen(packed, bank) {
+    var seen = {};
+    Object.keys(packed || {}).forEach(function (tid) {
+      var list = bank.byTopic[tid] || [], bytes = fromBase64(packed[tid]);
+      list.forEach(function (q, i) { if (bytes[i >> 3] & (1 << (i & 7))) seen[q.id] = 1; });
+    });
+    return seen;
+  }
+  var B64 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
+  function toBase64(bytes) {
+    var s = '';
+    for (var i = 0; i < bytes.length; i += 3) {
+      var n = (bytes[i] << 16) | ((bytes[i + 1] || 0) << 8) | (bytes[i + 2] || 0);
+      s += B64[n >> 18 & 63] + B64[n >> 12 & 63] + (i + 1 < bytes.length ? B64[n >> 6 & 63] : '=') + (i + 2 < bytes.length ? B64[n & 63] : '=');
+    }
+    return s;
+  }
+  function fromBase64(str) {
+    var out = [], clean = String(str).replace(/=+$/, '');
+    for (var i = 0; i < clean.length; i += 4) {
+      var n = 0;
+      for (var j = 0; j < 4; j++) n = (n << 6) | (i + j < clean.length ? B64.indexOf(clean[i + j]) : 0);
+      out.push(n >> 16 & 255);
+      if (i + 2 < clean.length) out.push(n >> 8 & 255);
+      if (i + 3 < clean.length) out.push(n & 255);
+    }
+    return out;
+  }
+
+  // The document stored for sync: compact, no per-device prefs.
+  function toRemote(state, bank) {
+    return { v: 1, updatedAt: state.updatedAt || 0, resetAt: state.resetAt || 0, topics: state.topics,
+      review: state.review, reviewDone: state.reviewDone, days: state.days, seenPacked: packSeen(state.seen, bank) };
+  }
+  function fromRemote(doc, bank) {
+    if (!doc || doc.v !== 1) return emptyState();
+    var s = JSON.parse(JSON.stringify(doc));
+    s.seen = unpackSeen(doc.seenPacked, bank);
+    delete s.seenPacked;
+    return normaliseState(s);
   }
 
   /* ---------- answers ---------- */
@@ -510,7 +611,8 @@
     topicStats: topicStats, acc20: acc20, kindsNeeded: kindsNeeded, rawLevel: rawLevel, levelOf: levelOf, masteryProgress: masteryProgress,
     record: record, reviewList: reviewList, weakest: weakest, streak: streak, dayKey: dayKey,
     normaliseAnswer: normaliseAnswer, present: present, grade: grade, correctSentence: correctSentence,
-    Session: Session, mulberry32: mulberry32
+    Session: Session, mulberry32: mulberry32,
+    mergeStates: mergeStates, packSeen: packSeen, unpackSeen: unpackSeen, toRemote: toRemote, fromRemote: fromRemote
   };
   if (typeof module !== 'undefined' && module.exports) module.exports = Engine;
   else root.Engine = Engine;
