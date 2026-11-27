@@ -100,8 +100,8 @@
   function boot() {
     renderLoading();
     Promise.all([
-      fetch('data/topics.json').then(function (r) { if (!r.ok) throw new Error('topics.json: ' + r.status); return r.json(); }),
-      fetch('data/questions.json').then(function (r) { if (!r.ok) throw new Error('questions.json: ' + r.status); return r.json(); })
+      fetch('data/topics.json', { cache: 'no-cache' }).then(function (r) { if (!r.ok) throw new Error('topics.json: ' + r.status); return r.json(); }),
+      fetch('data/questions.json', { cache: 'no-cache' }).then(function (r) { if (!r.ok) throw new Error('questions.json: ' + r.status); return r.json(); })
     ]).then(function (res) {
       bank = E.createBank(res[0], res[1]);
       state = E.normaliseState(Store.load());
